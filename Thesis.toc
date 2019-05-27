@@ -1,0 +1,23 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Nomenclature}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Issues with Gene Nomenclature}{1}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Issues with Gene Nomenclature}{2}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}PyBEL: a computational framework for Biological Expression Language}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}BEL Commons: an environment for exploration and analysis of networks encoded in Biological Expression Language}{7}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Re-curation and Rational Enrichment of Knowledge Graphs in Biological Expression Language}{21}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Integration of Structured Biological Data Sources using Biological Expression Language}{47}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}BEL2ABM: Agent-based simulation of static models in Biological Expression Language}{65}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}GuiltyTargets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning}{71}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusion and Outlook}{87}{chapter.8}

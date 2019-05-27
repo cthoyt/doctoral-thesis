@@ -1,0 +1,37 @@
+%Daniel Domingo Fernandez PhD Thesis 
+%University of Bonn PhD in Computational Life Sciences
+
+\documentclass[a4paper, openright, 12pt, twoside]{report}
+
+\include{./others/packages&Hacks}
+
+
+\begin{document}
+       
+    \include{./prologue/prologue}
+    
+    \pagenumbering{arabic}									%restart page numbering with arabic numbers
+    \setlength{\parskip}{1em}								%set space between paragraphs
+    \renewcommand{\baselinestretch}{1.2}				%set line spacing
+    
+	\include{./introduction/introduction}
+	
+	% One chapter per publication according to regulations -> https://www.mnf.uni-bonn.de/promotion/downloads/promotionsordnung-der-mathematisch-naturwissenschaftlichen-fakultaet-version-2011/view
+    
+    \input{./chapter1/chapter1}
+    
+	\input{./chapter2/chapter2}
+
+    \input{./chapter3/chapter3}
+     
+    \input{./chapter4/chapter4}
+    
+    \input{./chapter5/chapter5}
+    
+    \input{./chapter6/chapter6}
+        
+    \include{./epilogue/epilogue}
+    
+    \printbibliography
+    
+\end{document}
