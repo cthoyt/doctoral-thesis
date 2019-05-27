@@ -20,4 +20,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}GuiltyTargets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning}{71}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion and Outlook}{87}{chapter.8}
+\contentsline {chapter}{\numberline {8}A systematic approach for identifying shared mechanisms in epilepsy and its comorbidities.}{87}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{99}{chapter.9}

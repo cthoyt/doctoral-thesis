@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 MAY 2019 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 MAY 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,33 +1298,33 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 (./epilogue/epilogue.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 9.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 8.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \microtypecontext on input line 9.
+LaTeX Info: Redefining \microtypecontext on input line 8.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1369,7 +1369,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 8.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1379,9 +1379,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 8.
+LaTeX Info: Redefining \pageref on input line 8.
+LaTeX Info: Redefining \nameref on input line 8.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write5
@@ -1441,8 +1441,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' not found.
 
 No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 9.
-Package biblatex Info: Reference segment=0 on input line 9.
+Package biblatex Info: Reference section=0 on input line 8.
+Package biblatex Info: Reference segment=0 on input line 8.
 \openout2 = `./prologue/prologue.aux'.
 
 (./prologue/prologue.tex [1
@@ -1554,8 +1554,8 @@ Package microtype Info: Loading generic settings for font family
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11     \include{./prologue/prologue}
-                                       [11
+l.10 \include{./prologue/prologue}
+                                   [11
 
 ]
 \openout2 = `./introduction/introduction.aux'.
@@ -1571,11 +1571,11 @@ Underfull \vbox (badness 6063) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 27.
 )
 [2] (./chapter1/chapter1.tex
 Chapter 2.
-<articles/pybel.pdf, id=116, 614.57909pt x 793.83177pt>
+<articles/pybel.pdf, id=122, 614.57909pt x 793.83177pt>
 File: articles/pybel.pdf Graphic file (type pdf)
 
 <use articles/pybel.pdf>
@@ -1586,7 +1586,7 @@ File: articles/pybel.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/pybel.pdf used on input line 8.
 (pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
 
-<articles/pybel.pdf, id=119, page=1, 614.57909pt x 793.83177pt>
+<articles/pybel.pdf, id=125, page=1, 614.57909pt x 793.83177pt>
 File: articles/pybel.pdf Graphic file (type pdf)
 
 <use articles/pybel.pdf, page 1>
@@ -1615,7 +1615,7 @@ File: articles/pybel.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/pybel.pdf, page1 used on input line 8.
 (pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
  [4 <./articles/pybel.pdf>]
-<articles/pybel.pdf, id=169, page=2, 614.57909pt x 793.83177pt>
+<articles/pybel.pdf, id=175, page=2, 614.57909pt x 793.83177pt>
 File: articles/pybel.pdf Graphic file (type pdf)
 
 <use articles/pybel.pdf, page 2>
@@ -1633,7 +1633,7 @@ Package pdftex.def Info: articles/pybel.pdf, page2 used on input line 8.
  [5 <./articles/pybel.pdf>])
 (./chapter2/chapter2.tex [6]
 Chapter 3.
-<articles/belcommons.pdf, id=191, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=197, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf>
@@ -1644,7 +1644,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf used on input line 9.
 (pdftex.def)             Requested size: 613.19037pt x 792.28604pt.
 
-<articles/belcommons.pdf, id=194, page=1, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=200, page=1, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 1>
@@ -1673,7 +1673,7 @@ Package pdftex.def Info: articles/belcommons.pdf, page1 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
 
 [8 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=255, page=2, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=261, page=2, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 2>
@@ -1689,7 +1689,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page2 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [9 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=270, page=3, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=276, page=3, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 3>
@@ -1705,7 +1705,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page3 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [10 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=278, page=4, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=284, page=4, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 4>
@@ -1721,7 +1721,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page4 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [11 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=289, page=5, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=295, page=5, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 5>
@@ -1737,7 +1737,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page5 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [12 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=299, page=6, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=305, page=6, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 6>
@@ -1753,7 +1753,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page6 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [13 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=304, page=7, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=310, page=7, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 7>
@@ -1769,7 +1769,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page7 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [14 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=313, page=8, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=319, page=8, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 8>
@@ -1785,7 +1785,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page8 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [15 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=324, page=9, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=330, page=9, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 9>
@@ -1801,7 +1801,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page9 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [16 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=332, page=10, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=338, page=10, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 10>
@@ -1817,7 +1817,7 @@ File: articles/belcommons.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/belcommons.pdf, page10 used on input line 9.
 (pdftex.def)             Requested size: 597.68657pt x 772.25403pt.
  [17 <./articles/belcommons.pdf>]
-<articles/belcommons.pdf, id=337, page=11, 613.19188pt x 792.28798pt>
+<articles/belcommons.pdf, id=343, page=11, 613.19188pt x 792.28798pt>
 File: articles/belcommons.pdf Graphic file (type pdf)
 
 <use articles/belcommons.pdf, page 11>
@@ -1837,7 +1837,7 @@ Package pdftex.def Info: articles/belcommons.pdf, page11 used on input line 9.
 
 ]
 Chapter 4.
-<articles/recuration.pdf, id=351, 614.295pt x 794.97pt>
+<articles/recuration.pdf, id=357, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf>
@@ -1848,7 +1848,7 @@ File: articles/recuration.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/recuration.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<articles/recuration.pdf, id=354, page=1, 614.295pt x 794.97pt>
+<articles/recuration.pdf, id=360, page=1, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 1>
@@ -1878,7 +1878,7 @@ Package pdftex.def Info: articles/recuration.pdf, page1 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=386, page=2, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=392, page=2, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 2>
@@ -1897,7 +1897,7 @@ Package pdftex.def Info: articles/recuration.pdf, page2 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=396, page=3, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=402, page=3, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 3>
@@ -1916,7 +1916,7 @@ Package pdftex.def Info: articles/recuration.pdf, page3 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=401, page=4, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=407, page=4, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 4>
@@ -1935,7 +1935,7 @@ Package pdftex.def Info: articles/recuration.pdf, page4 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=406, page=5, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=412, page=5, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 5>
@@ -1954,7 +1954,7 @@ Package pdftex.def Info: articles/recuration.pdf, page5 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=413, page=6, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=419, page=6, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 6>
@@ -1973,7 +1973,7 @@ Package pdftex.def Info: articles/recuration.pdf, page6 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=438, page=7, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=444, page=7, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 7>
@@ -1992,7 +1992,7 @@ Package pdftex.def Info: articles/recuration.pdf, page7 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=448, page=8, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=454, page=8, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 8>
@@ -2011,7 +2011,7 @@ Package pdftex.def Info: articles/recuration.pdf, page8 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=458, page=9, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=464, page=9, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 9>
@@ -2030,7 +2030,7 @@ Package pdftex.def Info: articles/recuration.pdf, page9 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=463, page=10, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=469, page=10, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 10>
@@ -2049,7 +2049,7 @@ Package pdftex.def Info: articles/recuration.pdf, page10 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=469, page=11, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=475, page=11, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 11>
@@ -2068,7 +2068,7 @@ Package pdftex.def Info: articles/recuration.pdf, page11 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=475, page=12, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=481, page=12, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 12>
@@ -2087,7 +2087,7 @@ Package pdftex.def Info: articles/recuration.pdf, page12 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=481, page=13, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=487, page=13, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 13>
@@ -2106,7 +2106,7 @@ Package pdftex.def Info: articles/recuration.pdf, page13 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=487, page=14, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=493, page=14, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 14>
@@ -2125,7 +2125,7 @@ Package pdftex.def Info: articles/recuration.pdf, page14 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=493, page=15, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=500, page=15, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 15>
@@ -2144,7 +2144,7 @@ Package pdftex.def Info: articles/recuration.pdf, page15 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=499, page=16, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=505, page=16, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 16>
@@ -2163,7 +2163,7 @@ Package pdftex.def Info: articles/recuration.pdf, page16 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=509, page=17, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=515, page=17, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 17>
@@ -2182,7 +2182,7 @@ Package pdftex.def Info: articles/recuration.pdf, page17 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=515, page=18, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=521, page=18, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 18>
@@ -2201,7 +2201,7 @@ Package pdftex.def Info: articles/recuration.pdf, page18 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=520, page=19, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=526, page=19, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 19>
@@ -2220,7 +2220,7 @@ Package pdftex.def Info: articles/recuration.pdf, page19 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=530, page=20, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=536, page=20, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 20>
@@ -2239,7 +2239,7 @@ Package pdftex.def Info: articles/recuration.pdf, page20 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=535, page=21, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=541, page=21, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 21>
@@ -2258,7 +2258,7 @@ Package pdftex.def Info: articles/recuration.pdf, page21 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=540, page=22, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=546, page=22, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 22>
@@ -2277,7 +2277,7 @@ Package pdftex.def Info: articles/recuration.pdf, page22 used on input line 7.
 
 pdfTeX warning: pdflatex (file ./articles/recuration.pdf): PDF inclusion: inval
 id other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/recuration.pdf, id=545, page=23, 614.295pt x 794.97pt>
+>] <articles/recuration.pdf, id=551, page=23, 614.295pt x 794.97pt>
 File: articles/recuration.pdf Graphic file (type pdf)
 
 <use articles/recuration.pdf, page 23>
@@ -2300,7 +2300,7 @@ id other resource which is no dict (key 'ProcSets', type <array>); ignored.
 
 ]
 Chapter 5.
-<articles/bio2bel.pdf, id=559, 614.295pt x 794.97pt>
+<articles/bio2bel.pdf, id=565, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf>
@@ -2311,7 +2311,7 @@ File: articles/bio2bel.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/bio2bel.pdf used on input line 9.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<articles/bio2bel.pdf, id=562, page=1, 614.295pt x 794.97pt>
+<articles/bio2bel.pdf, id=568, page=1, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 1>
@@ -2340,7 +2340,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page1 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=604, page=2, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=610, page=2, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 2>
@@ -2359,7 +2359,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page2 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=614, page=3, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=620, page=3, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 3>
@@ -2378,7 +2378,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page3 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=630, page=4, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=636, page=4, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 4>
@@ -2397,7 +2397,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page4 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=637, page=5, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=643, page=5, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 5>
@@ -2416,7 +2416,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page5 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=652, page=6, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=658, page=6, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 6>
@@ -2435,7 +2435,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page6 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=657, page=7, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=663, page=7, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 7>
@@ -2454,7 +2454,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page7 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=662, page=8, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=669, page=8, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 8>
@@ -2473,7 +2473,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page8 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=668, page=9, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=674, page=9, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 9>
@@ -2492,7 +2492,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page9 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=674, page=10, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=680, page=10, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 10>
@@ -2511,7 +2511,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page10 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=679, page=11, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=685, page=11, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 11>
@@ -2530,7 +2530,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page11 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=684, page=12, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=690, page=12, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 12>
@@ -2549,7 +2549,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page12 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=689, page=13, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=695, page=13, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 13>
@@ -2568,7 +2568,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page13 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=699, page=14, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=705, page=14, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 14>
@@ -2587,7 +2587,7 @@ Package pdftex.def Info: articles/bio2bel.pdf, page14 used on input line 9.
 
 pdfTeX warning: pdflatex (file ./articles/bio2bel.pdf): PDF inclusion: invalid 
 other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <articles/bio2bel.pdf, id=704, page=15, 614.295pt x 794.97pt>
+>] <articles/bio2bel.pdf, id=710, page=15, 614.295pt x 794.97pt>
 File: articles/bio2bel.pdf Graphic file (type pdf)
 
 <use articles/bio2bel.pdf, page 15>
@@ -2610,7 +2610,7 @@ other resource which is no dict (key 'ProcSets', type <array>); ignored.
 
 ]
 Chapter 6.
-<articles/bel2abm.pdf, id=718, 614.57909pt x 793.83177pt>
+<articles/bel2abm.pdf, id=724, 614.57909pt x 793.83177pt>
 File: articles/bel2abm.pdf Graphic file (type pdf)
 
 <use articles/bel2abm.pdf>
@@ -2621,7 +2621,7 @@ File: articles/bel2abm.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/bel2abm.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
 
-<articles/bel2abm.pdf, id=721, page=1, 614.57909pt x 793.83177pt>
+<articles/bel2abm.pdf, id=727, page=1, 614.57909pt x 793.83177pt>
 File: articles/bel2abm.pdf Graphic file (type pdf)
 
 <use articles/bel2abm.pdf, page 1>
@@ -2647,7 +2647,7 @@ File: articles/bel2abm.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/bel2abm.pdf, page1 used on input line 7.
 (pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
  [66 <./articles/bel2abm.pdf>]
-<articles/bel2abm.pdf, id=770, page=2, 614.57909pt x 793.83177pt>
+<articles/bel2abm.pdf, id=776, page=2, 614.57909pt x 793.83177pt>
 File: articles/bel2abm.pdf Graphic file (type pdf)
 
 <use articles/bel2abm.pdf, page 2>
@@ -2663,7 +2663,7 @@ File: articles/bel2abm.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/bel2abm.pdf, page2 used on input line 7.
 (pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
  [67 <./articles/bel2abm.pdf>]
-<articles/bel2abm.pdf, id=791, page=3, 614.57909pt x 793.83177pt>
+<articles/bel2abm.pdf, id=797, page=3, 614.57909pt x 793.83177pt>
 File: articles/bel2abm.pdf Graphic file (type pdf)
 
 <use articles/bel2abm.pdf, page 3>
@@ -2683,7 +2683,7 @@ Package pdftex.def Info: articles/bel2abm.pdf, page3 used on input line 7.
 
 ]
 Chapter 7.
-<articles/guiltytargets.pdf, id=805, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=811, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf>
@@ -2694,7 +2694,7 @@ File: articles/guiltytargets.pdf Graphic file (type pdf)
 Package pdftex.def Info: articles/guiltytargets.pdf used on input line 7.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<articles/guiltytargets.pdf, id=808, page=1, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=814, page=1, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 1>
@@ -2727,7 +2727,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page1 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [72 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=845, page=2, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=851, page=2, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 2>
@@ -2747,7 +2747,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page2 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [73 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=855, page=3, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=861, page=3, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 3>
@@ -2767,7 +2767,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page3 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [74 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=869, page=4, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=875, page=4, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 4>
@@ -2787,7 +2787,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page4 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [75 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=889, page=5, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=895, page=5, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 5>
@@ -2807,7 +2807,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page5 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [76 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=897, page=6, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=903, page=6, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 6>
@@ -2827,7 +2827,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page6 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [77 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=905, page=7, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=911, page=7, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 7>
@@ -2847,7 +2847,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page7 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [78 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=910, page=8, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=916, page=8, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 8>
@@ -2867,7 +2867,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page8 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [79 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=918, page=9, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=924, page=9, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 9>
@@ -2887,7 +2887,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page9 used on input line 7
 .
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [80 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=924, page=10, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=930, page=10, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 10>
@@ -2907,7 +2907,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page10 used on input line
 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [81 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=929, page=11, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=935, page=11, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 11>
@@ -2927,7 +2927,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page11 used on input line
 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [82 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=934, page=12, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=940, page=12, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 12>
@@ -2947,7 +2947,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page12 used on input line
 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [83 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=939, page=13, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=945, page=13, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 13>
@@ -2967,7 +2967,7 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page13 used on input line
 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [84 <./articles/guiltytargets.pdf>]
-<articles/guiltytargets.pdf, id=944, page=14, 614.295pt x 794.97pt>
+<articles/guiltytargets.pdf, id=950, page=14, 614.295pt x 794.97pt>
 File: articles/guiltytargets.pdf Graphic file (type pdf)
 
 <use articles/guiltytargets.pdf, page 14>
@@ -2987,35 +2987,204 @@ Package pdftex.def Info: articles/guiltytargets.pdf, page14 used on input line
 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [85 <./articles/guiltytargets.pdf>])
-[86]
+(./chapter7/chapter7.tex [86]
+Chapter 8.
+<articles/epicom.pdf, id=960, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf>
+Package pdftex.def Info: articles/epicom.pdf used on input line 7.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf>
+Package pdftex.def Info: articles/epicom.pdf used on input line 7.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+<articles/epicom.pdf, id=963, page=1, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 1>
+Package pdftex.def Info: articles/epicom.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 1>
+Package pdftex.def Info: articles/epicom.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [87
+
+]
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 1>
+Package pdftex.def Info: articles/epicom.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 1>
+Package pdftex.def Info: articles/epicom.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 1>
+Package pdftex.def Info: articles/epicom.pdf, page1 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [88 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1011, page=2, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 2>
+Package pdftex.def Info: articles/epicom.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 2>
+Package pdftex.def Info: articles/epicom.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 2>
+Package pdftex.def Info: articles/epicom.pdf, page2 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [89 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1028, page=3, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 3>
+Package pdftex.def Info: articles/epicom.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 3>
+Package pdftex.def Info: articles/epicom.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 3>
+Package pdftex.def Info: articles/epicom.pdf, page3 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [90 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1041, page=4, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 4>
+Package pdftex.def Info: articles/epicom.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 4>
+Package pdftex.def Info: articles/epicom.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 4>
+Package pdftex.def Info: articles/epicom.pdf, page4 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [91 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1049, page=5, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 5>
+Package pdftex.def Info: articles/epicom.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 5>
+Package pdftex.def Info: articles/epicom.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 5>
+Package pdftex.def Info: articles/epicom.pdf, page5 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [92 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1058, page=6, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 6>
+Package pdftex.def Info: articles/epicom.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 6>
+Package pdftex.def Info: articles/epicom.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 6>
+Package pdftex.def Info: articles/epicom.pdf, page6 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [93 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1063, page=7, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 7>
+Package pdftex.def Info: articles/epicom.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 7>
+Package pdftex.def Info: articles/epicom.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 7>
+Package pdftex.def Info: articles/epicom.pdf, page7 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [94 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1073, page=8, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 8>
+Package pdftex.def Info: articles/epicom.pdf, page8 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 8>
+Package pdftex.def Info: articles/epicom.pdf, page8 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 8>
+Package pdftex.def Info: articles/epicom.pdf, page8 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [95 <./articles/epicom.pdf>]
+<articles/epicom.pdf, id=1078, page=9, 614.57909pt x 793.83177pt>
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 9>
+Package pdftex.def Info: articles/epicom.pdf, page9 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+ <use articles/epicom.pdf, page 9>
+Package pdftex.def Info: articles/epicom.pdf, page9 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+File: articles/epicom.pdf Graphic file (type pdf)
+
+<use articles/epicom.pdf, page 9>
+Package pdftex.def Info: articles/epicom.pdf, page9 used on input line 7.
+(pdftex.def)             Requested size: 598.06343pt x 772.49904pt.
+ [96 <./articles/epicom.pdf>]) [97]
 \openout2 = `./epilogue/epilogue.aux'.
 
- (./epilogue/epilogue.tex
-Chapter 8.
-) [87
+
+(./epilogue/epilogue.tex [98
 
 
 ]
+Chapter 9.
+) [99]
 
-LaTeX Warning: Empty bibliography on input line 35.
+LaTeX Warning: Empty bibliography on input line 36.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
 (./Thesis.aux (./prologue/prologue.aux) (./introduction/introduction.aux)
 (./epilogue/epilogue.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A47C269D40AE80D7313C19A17EEC4961;848.
+(rerunfilecheck)             Checksum: B1FC9BAB38F2FBBB4C7D678B0D933F70;973.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21965 strings out of 492995
- 356795 string characters out of 6132704
- 896549 words of memory out of 5000000
- 24857 multiletter control sequences out of 15000+600000
+ 22017 strings out of 492995
+ 357857 string characters out of 6132704
+ 896663 words of memory out of 5000000
+ 24890 multiletter control sequences out of 15000+600000
  35757 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,94p,2036b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3034,10 +3203,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (98 pages, 13506705 bytes).
+Output written on Thesis.pdf (110 pages, 13993127 bytes).
 PDF statistics:
- 1014 PDF objects out of 1200 (max. 8388607)
- 666 compressed objects within 7 object streams
- 114 named destinations out of 1000 (max. 500000)
- 29167 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1160 PDF objects out of 1200 (max. 8388607)
+ 762 compressed objects within 8 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 29235 words of extra memory for PDF output out of 29859 (max. 10000000)
 
