@@ -1,0 +1,129 @@
+\usepackage{mathpazo}   								%used to modify font
+\usepackage[T1]{fontenc}								%used to allow T1-based fonts in latex (more glyphs I think)
+\usepackage[utf8]{inputenc}								%used to specify to latex that the file in coded as UTF-8 (ó)
+\usepackage[acronym, nomain, nonumberlist]{glossaries}
+\usepackage{indentfirst}								%used to indent the first paragraph of each section
+\usepackage{microtype} 									%used to disable ligatures
+\usepackage{xcolor}										%used to color font
+\usepackage{paralist}									%used to add inline lists inside paragraphs (inparaenum command)
+\usepackage{graphicx}									%used to add figures
+\usepackage[hidelinks]{hyperref}						%used for autoref, linking ref to the object and so links are not a different color
+\usepackage[left=3cm, right=3cm]{geometry}				%used to specify margins and such
+\usepackage{setspace}									%used for the stretch comman in caption
+\usepackage{pdfpages}									%used to include pdfs directly
+\usepackage{newunicodechar}								%used to solve a bib file problem where it couldn't display (U+2212)
+\usepackage{textcomp}									%used for micro symbol (upright mu)
+\usepackage{chngcntr}									%used for continuous numbering of figures
+\usepackage{titlesec}									%used to modify chapter headings
+\usepackage[titles]{tocloft}							%used to modify toc formatting
+% used to format the captions
+\usepackage[font={small, stretch=1.15},labelfont=bf, singlelinecheck=false]{caption}			
+% used for bibliography information
+%\usepackage[
+%    citestyle=chem-acs,
+%    style=numeric,
+%    sorting=none,
+%    doi=false,
+%    isbn=false,
+%    url=false,
+%    giveninits=true,
+%    maxbibnames=99,
+%    backend=biber
+%]{biblatex}
+
+\usepackage{url}
+
+% Modifies format of toc lines (no bold font)
+\renewcommand\cftchapfont{\normalsize}
+\renewcommand\cftchappagefont{\normalsize}
+
+%\makeglossaries
+
+% Chapter formatting
+\definecolor{halfgray}{gray}{0.55}
+\newcommand\mychapterNumber{\fontsize{100}{100}\selectfont}%
+\titleformat{\chapter}[block]%
+{\relax}{{\color{halfgray}\mychapterNumber\thechapter}}{1.2em}%
+{\raggedright\Huge}[\normalsize]%
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\rmfamily\Large}
+{\thesection}{0.2cm}{}
+
+% Subsection formatting
+\titleformat{\subsection}
+{\normalfont\rmfamily\large}
+{\thesubsection}{0.2cm}{}
+
+% set the spaces before and after the chapter heading for numberless chapters
+% to make the abstract fit to one page (else one line is left hanging)
+\titlespacing*{name=\chapter,numberless}{0pt}{45pt}{10pt}  
+                                                           
+
+% the first is the “unknown minus” (U+2212), the second is a hyphen
+% Added because there was a problem in the bib file, but I couldn't find any −
+\newunicodechar{−}{-}
+
+\counterwithout{figure}{chapter}						%making Figure number not reset at chapter start
+\setcounter{tocdepth}{0}								% Allow only \chapter in ToC
+\renewcommand{\thefigure}{\arabic{figure}}				%change caption numbering to not use chapter number
+\renewcommand{\thetable}{\arabic{table}}				%change caption numbering to not use chapter number
+\frenchspacing											%used so the space after a sentence is not longer than usual
+% Make font in bibliography smaller
+%\renewcommand*{\bibfont}{\small}
+
+% bibliography formatting
+%\renewbibmacro{in:}{%
+%    \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+%\DeclareFieldFormat[article]{title}{#1}
+%\DeclareFieldFormat[article]{volume}{#1 }
+%\DeclareFieldFormat[article]{pages}{#1}
+%\DeclareFieldFormat{date}{\bfseries{#1}}
+%\renewcommand*{\finalnamedelim}{\multinamedelim} %remove and at the last name
+%
+%
+%
+%% see https://tex.stackexchange.com/questions/81569/biblatex-parentheses-around-the-volume-number-of-an-article
+%\renewbibmacro*{volume+number+eid}{%
+%    \printfield{volume}%
+%    %  \setunit*{\adddot}% DELETED
+%    \setunit*{\addnbthinspace}% NEW (optional); there's also \addnbthinspace
+%    \printfield{number}%
+%    %\setunit{\addcomma\space}%
+%    %\printfield{eid}
+%    }
+%\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+%
+%% see https://tex.stackexchange.com/questions/144779/biblatex-change-order-of-year-year-without-brackets-in-numeric-style
+%\renewbibmacro*{journal+issuetitle}{%
+%    \usebibmacro{journal}%
+%    \setunit*{\addspace}%
+%    \iffieldundef{series}
+%    {}
+%    {\newunit
+%        \printfield{series}%
+%        \setunit{\addspace}}%
+%    \usebibmacro{issue+date}%
+%    \setunit{\addcomma\space}%
+%    \usebibmacro{volume+number+eid}%
+%    \setunit{\addcolon\space}%
+%    \usebibmacro{issue}%
+%    \newunit}
+%
+%\renewbibmacro*{issue+date}{%
+%    \iffieldundef{issue}
+%    {\usebibmacro{date}}
+%    {\printfield{issue}%
+%        \setunit*{\addspace}%
+%        \usebibmacro{date}}%
+%    \newunit}
+
+% Remove quotation marks from inprocedeeings and bookchapter types
+%\DeclareFieldFormat[incollection]{title}{#1}
+%\DeclareFieldFormat[inproceedings]{title}{#1}
+
+% Make book titles non italics when I cite the whole book
+%\DeclareFieldFormat[book]{title}{#1}
+% Remove p. and pp. from page
+%\DeclareFieldFormat{pages}{#1}

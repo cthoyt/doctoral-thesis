@@ -1,0 +1,107 @@
+\begin{titlepage} % with this page count is reset when we end environment
+    \pagenumbering{gobble} % hide page numbers
+
+    \begin{center}
+        \fontsize{28}{36}\selectfont % changes font size
+
+        Generation and Applications of Knowledge Graphs in Systems and Networks Biology
+
+        \vspace{3.5cm} % adds vertical space
+        \renewcommand{\baselinestretch}{1.5} % sets line separation
+        \large
+
+        Kumulative Dissertation \\
+        zur Erlangung des Doktorgrades (Dr. rer. nat.)\\
+        der Mathematisch-Naturwissenschaftlichen Fakult\"at \\
+        der Rheinischen Friedrich-Wilhelms-Universit\"at Bonn \\
+
+        \vspace{2.0cm}
+        \renewcommand{\baselinestretch}{1.1}
+
+        vorgelegt von \\
+        \textsc{Charles Tapley Hoyt} \\
+        aus New Haven, United States of America \\
+
+        \renewcommand{\baselinestretch}{1}
+        \vspace{1.0cm}
+
+        Bonn, 2019 \\
+    \end{center}
+\end{titlepage}
+
+\newpage\null\newpage
+
+\begin{flushleft} % supresses indentation in the first line of a paragraph
+    \vspace*{12cm}
+    \large
+
+    Angefertigt mit Genehmigung \\
+    der Mathematisch-Naturwissenschaftlichen Fakult\"at \\
+    der Rheinischen Friedrich-Wilhelms-Universit\"at Bonn \\
+
+    \vspace{1.5cm}
+    \renewcommand{\baselinestretch}{1.6}
+
+    \begin{enumerate}
+        \item Gutachter: Univ.-Prof. Dr. rer. nat. Martin Hofmann-Apitius
+        \item Gutachter: Univ.-Prof. Dr. rer. nat. Andreas Weber
+    \end{enumerate}
+    Tag der Promotion: XX. September 2019 \\
+    Erscheinungsjahr: 2019 \\
+
+\end{flushleft}
+\newpage\null\newpage
+
+
+\chapter*{Abstract}
+
+This thesis begins with the acknowledgement of the acceleration of generation of knowledge within the biomedical domain.
+The first two papers (PyBEL and BEL Commons) build an ecosystem for handling this knowledge during curation, application of algorithmics, and visualization.
+The second two papers revolve around enabling the acquisition of
+high-granularity knowledge from structured sources on a massive scale (Bio2BEL) and supporting the semi-automated curation of new content at high speed and precision (Re-curation and Rational Enrichment).
+Finally, after building the ecosystem and acquiring the content, the third part of this thesis revolves around the applications of biological knowledge graphs in simulation and modeling.
+This includes agent-based modeling using biological knowledge graphs as priors (BEL2ABM), the application of network representation learning to prioritize nodes in biological knowledge graphs based on corresponding experimental measurements (GuiltyTargets), and finally, the use of biological knowledge graphs and development of algorithmics to deconvolute the mechanism of action of drugs, that could also serve as a drug repositioning candidate identifier (EpiCom).
+Ultimately, the this thesis lays the groundwork for production-level applications of drug repositioning algorithms and other knowledge-driven approaches to analyzing biomedical experiments.
+
+\setlength{\parskip}{1em}                                %set space between paragraphs
+\renewcommand{\baselinestretch}{1.2}                    %set line spacing
+
+\chapter*{Acknowledgment}
+
+Martin
+
+Supportive Department
+
+Family
+
+Daniel
+
+Scott
+
+Students
+
+\chapter*{Publications}
+
+\section*{Thesis Publications}
+
+\begin{enumerate}
+    \item \textbf{Hoyt, C. T.}, Konotopez, A., \& Ebeling, C. (2018). PyBEL: a computational framework for Biological Expression Language. \textit{Bioinformatics (Oxford, England)}, 34(4), 703–704.
+    \item \textbf{Hoyt, C. T.}, Domingo-Fernández, D., \& Hofmann-Apitius, M. (2018). BEL Commons: an environment for exploration and analysis of networks encoded in Biological Expression Language. \textit{Database : The Journal of Biological Databases and Curation}, 2018(3), 1–11.
+    \item \textbf{Hoyt, C. T.}, et al. (2019). Re-curation and Rational Enrichment of Knowledge Graphs in Biological Expression Language. \textit{bioRxiv}, 536409.
+    \item \textbf{Hoyt, C. T.}, et al. (2019). Bio2BEL: Integration of Structured Knowledge Sources with Biological Expression Language. \textit{bioRxiv}, 536409.
+    \item Gündel, M., \textbf{Hoyt, C. T.}, \& Hofmann-Apitius, M. (2018). BEL2ABM: Agent-based simulation of static models in Biological Expression Language. \textit{Bioinformatics}, 34(13), 2316–2318.
+    \item Muslu, Ö., \textbf{Hoyt, C. T.}, \& Hofmann-Apitius, M., \& Fröhlich, H. (2019). GuiltyTargets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning. \textit{bioRxiv}, 1–14.
+    \item \textbf{Hoyt, C. T.}, et al. (2018). A systematic approach for identifying shared mechanisms in epilepsy and its comorbidities. \textit{Database : The Journal of Biological Databases and Curation}, 2018(1).
+\end{enumerate}
+
+\section*{Other Publications}
+
+\begin{itemize}
+    \item Bradford, R., Sturm, T., Weber, A., Davenport, J. H., England, M., Errami, H., Gerdt, V., Grigoriev, D., \textbf{Hoyt, C. T.}, Košta, M., \& Radulescu, O. (2017). A Case Study on the Parametric Occurrence of Multiple Steady States. In Proceedings of the 2017 ACM on International Symposium on Symbolic and Algebraic Computation - ISSAC ’17 (Vol. Part F1293, pp. 45–52). New York, New York, USA: ACM Press.
+    \item Domingo-Fernández, D., \textbf{Hoyt, C. T.}, Alvarez, C. B., Marin-Llao, J., \& Hofmann-Apitius, M. (2018). ComPath: an ecosystem for exploring, analyzing, and curating mappings across pathway databases. \textit{Npj Systems Biology and Applications}, 5(1), 3.
+    \item Domingo-Fernández, D., Mubeen, S., Marín-Llaó, J., \textbf{Hoyt, C. T.}, \& Hofmann-Apitius, M. (2019). PathMe: merging and exploring mechanistic pathway knowledge. \textit{BMC Bioinformatics}, 20(1), 243.
+    \item Ali, M., \textbf{Hoyt, C. T.}, Domingo-Fernández, D., Lehmann, J., \& Jabeen, H. (2019). BioKEEN: A library for learning and evaluating biological knowledge graph embeddings. \textit{Bioinformatics (Oxford, England)}.
+    \item Bradford, R., Davenport, J. H., England, M., Errami, H., Gerdt, V., Grigoriev, D., \textbf{Hoyt, C. T.}, Kosta, M., Radulescu, O., Sturm, T., \& Weber, A. (2019). Identifying the Parametric Occurrence of Multiple Steady States for some Biological Networks. Retrieved from http://arxiv.org/abs/1902.04882
+\end{itemize}
+
+\tableofcontents

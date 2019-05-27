@@ -1,0 +1,41 @@
+% Charles Tapley Hoyt PhD Thesis
+% University of Bonn PhD in Computational Life Sciences
+
+\documentclass[a4paper, openright, 12pt, twoside]{report}
+
+\include{others/preamble}
+
+\usepackage[]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+    \include{others/prologue}
+
+    \pagenumbering{arabic} % restart page numbering with arabic numbers
+    \setlength{\parskip}{1em} % set space between paragraphs
+    \renewcommand{\baselinestretch}{1.2} % set line spacing
+
+    \input{content/introduction}
+
+    % One chapter per publication according to regulations
+    % see: https://www.mnf.uni-bonn.de/promotion/downloads/promotionsordnung-der-mathematisch-naturwissenschaftlichen-fakultaet-version-2011/view
+
+    \input{content/chapter1}
+
+    \input{content/chapter2}
+
+    \input{content/chapter3}
+
+    \input{content/chapter4}
+
+    \input{content/chapter5}
+
+    \input{content/chapter6}
+
+    \input{content/chapter7}
+
+    \input{content/epilogue}
+
+    \printbibliography
+
+\end{document}
