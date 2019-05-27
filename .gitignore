@@ -1,4 +1,8 @@
-
 .DS_Store
 Thesis.log
 *.aux
+Thesis.out
+Thesis.out
+Thesis.bcf
+Thesis.run.xml
+Thesis.toc

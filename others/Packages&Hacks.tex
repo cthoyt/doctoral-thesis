@@ -1,4 +1,3 @@
-
 \usepackage{mathpazo}   								%used to modify font
 \usepackage[T1]{fontenc}								%used to allow T1-based fonts in latex (more glyphs I think)
 \usepackage[utf8]{inputenc}								%used to specify to latex that the file in coded as UTF-8 (ó)
@@ -17,43 +16,51 @@
 \usepackage{chngcntr}									%used for continuous numbering of figures
 \usepackage{titlesec}									%used to modify chapter headings
 \usepackage[titles]{tocloft}							%used to modify toc formatting
-%used to format the captions
+% used to format the captions
 \usepackage[font={small, stretch=1.15},labelfont=bf, singlelinecheck=false]{caption}			
-%used for bibliography information
-
-
-\usepackage[citestyle=chem-acs, sorting=none,doi=false,isbn=false,url=false, giveninits=true, maxbibnames=99, backend=biber]{biblatex}
+% used for bibliography information
+\usepackage[
+    citestyle=chem-acs,
+    style=numeric,
+    sorting=none,
+    doi=false,
+    isbn=false,
+    url=false,
+    giveninits=true,
+    maxbibnames=99,
+    backend=biber
+]{biblatex}
 
 \usepackage{url}
 
-%Modifies format of toc lines (no bold font)
+% Modifies format of toc lines (no bold font)
 \renewcommand\cftchapfont{\normalsize}
 \renewcommand\cftchappagefont{\normalsize}
 
 
 %\makeglossaries
 
-%Chapter formatting
+% Chapter formatting
 \definecolor{halfgray}{gray}{0.55}
 \newcommand\mychapterNumber{\fontsize{100}{100}\selectfont}%
 \titleformat{\chapter}[block]%
 {\relax}{{\color{halfgray}\mychapterNumber\thechapter}}{1.2em}%
 {\raggedright\Huge}[\normalsize]%
-%Section formatting
+% Section formatting
 \titleformat{\section}
 {\normalfont\rmfamily\Large}
 {\thesection}{0.2cm}{}
-%Subsection formatting
+% Subsection formatting
 \titleformat{\subsection}
 {\normalfont\rmfamily\large}
 {\thesubsection}{0.2cm}{}
 
-%set the spaces before and after the chapter heading for numberless chapters
-%to make the abstract fit to one page (else one line is left hanging)
+% set the spaces before and after the chapter heading for numberless chapters
+% to make the abstract fit to one page (else one line is left hanging)
 \titlespacing*{name=\chapter,numberless}{0pt}{45pt}{10pt}  
                                                            
 
-%% the first is the “unknown minus” (U+2212), the second is a hyphen
+% the first is the “unknown minus” (U+2212), the second is a hyphen
 % Added because there was a problem in the bib file, but I couldn't find any −
 \newunicodechar{−}{-}
 
@@ -62,12 +69,12 @@
 \renewcommand{\thefigure}{\arabic{figure}}				%change caption numbering to not use chapter number
 \renewcommand{\thetable}{\arabic{table}}				%change caption numbering to not use chapter number
 \frenchspacing											%used so the space after a sentence is not longer than usual
-\bibliography{./references/references}								
+\bibliography{./references/references}
 
-%Make font in bibliography smaller
+% Make font in bibliography smaller
 \renewcommand*{\bibfont}{\small}
 
-%bibliography formatting
+% bibliography formatting
 \renewbibmacro{in:}{%
     \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
 \DeclareFieldFormat[article]{title}{#1}
@@ -78,7 +85,7 @@
 
 
 
-%see https://tex.stackexchange.com/questions/81569/biblatex-parentheses-around-the-volume-number-of-an-article
+% see https://tex.stackexchange.com/questions/81569/biblatex-parentheses-around-the-volume-number-of-an-article
 \renewbibmacro*{volume+number+eid}{%
     \printfield{volume}%
     %  \setunit*{\adddot}% DELETED
@@ -89,7 +96,7 @@
     }
 \DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
 
-%see https://tex.stackexchange.com/questions/144779/biblatex-change-order-of-year-year-without-brackets-in-numeric-style
+% see https://tex.stackexchange.com/questions/144779/biblatex-change-order-of-year-year-without-brackets-in-numeric-style
 \renewbibmacro*{journal+issuetitle}{%
     \usebibmacro{journal}%
     \setunit*{\addspace}%
@@ -113,11 +120,11 @@
         \usebibmacro{date}}%
     \newunit}
 
-%Remove quotation marks from inprocedeeings and bookchapter types
+% Remove quotation marks from inprocedeeings and bookchapter types
 \DeclareFieldFormat[incollection]{title}{#1} 
 \DeclareFieldFormat[inproceedings]{title}{#1}
 
-%Make book titles non italics when I cite the whole book
+% Make book titles non italics when I cite the whole book
 \DeclareFieldFormat[book]{title}{#1}
-
-\DeclareFieldFormat{pages}{#1}				%Remove p. and pp. from page
+% Remove p. and pp. from page
+\DeclareFieldFormat{pages}{#1}
