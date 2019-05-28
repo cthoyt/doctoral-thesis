@@ -5,8 +5,16 @@
 
 \include{others/preamble}
 
-\usepackage[]{biblatex}
+\usepackage[
+    style=chem-acs,
+    maxbibnames=5,
+    doi=false,
+    isbn=false,
+    backend=biber
+]{biblatex}
 \addbibresource{references.bib}
+
+\include{others/acronyms}
 
 \begin{document}
     \include{others/prologue}
