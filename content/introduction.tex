@@ -98,7 +98,7 @@ The NF-kB complex comprises five proteins (i.e., RELA, RELB, REL, NFKB1, and NFK
 
 \subsection{Automating Named Entity Recognition}
 
-In practice, automating the process of recognizing named entities has three major tasks: coreference resolution, named entity recognition, and entity linking.
+In practice, automating the process of recognizing named entities has three major tasks: coreference resolution, \ac{NER}, and entity linking.
 
 \subsubsection*{Coreference Resolution}
 
@@ -111,10 +111,10 @@ Recent work has focused on using recurrent neural networks with architectures su
 
 \subsubsection*{Named Entity Recognition}
 
-During the process of named entity recognition, words or phrases are identified to have domain-specific, non-trivial meaning.
-In the biomedical domain, named entity recognition is used to identify proteins~\cite{Hsu2008,Leaman2008, Hakenberg2011,Wei2015}, chemicals~\cite{Leaman2015,Corbett2018,Giorgi526244}, diseases~\cite{Leaman2013,Giorgi526244}, taxa~\cite{Gerner2010,Wei2012}, and other entity types listed in Table~\ref{table:other_nomenclature_databases}.
+During the process of \ac{NER}, words or phrases are identified to have domain-specific, non-trivial meaning.
+In the biomedical domain, \ac{NER} is used to identify proteins~\cite{Hsu2008,Leaman2008, Hakenberg2011,Wei2015}, chemicals~\cite{Leaman2015,Corbett2018,Giorgi526244}, diseases~\cite{Leaman2013,Giorgi526244}, taxa~\cite{Gerner2010,Wei2012}, and other entity types listed in Table~\ref{table:other_nomenclature_databases}.
 
-Unlike the clear difference between the rule-based and natural language processing models of coreference resolution versus the machine learning techniques, named entity recognition workflows often contain a mixture of preprocessing steps, rule-based feature generation, statistical models, machine learning models, and postprocessing steps.
+Unlike the clear difference between the rule-based and natural language processing models of coreference resolution versus the machine learning techniques, \ac{NER} workflows often contain a mixture of preprocessing steps, rule-based feature generation, statistical models, machine learning models, and postprocessing steps.
 For example, Lee \textit{et al.}~\cite{Lee2015} defined six feature classes for training a disease recognition model using a conditional random field.
 First, they generated morphological features that contained the original tokens, the corresponding stemmed tokens, and their affixes.
 Second, they generated features based on their terminology of trigger words related to diseases, body parts, and human ability.
@@ -123,7 +123,7 @@ Fourth, they transformed the original tokens to remove continued vowels, such as
 Fifth, they generated features using a dictionary lookup on the MEDIC~\cite{Davis2012} disease dictionary.
 Sixth, they annotated abbreviations using BIOADI~\cite{Kuo2009}.
 
-Other workflows have opted to use end-to-end machine learning since the recent advent of word embedding techniques such as word2vec~\cite{Mikolov2013} and GloVeZ\cite{Pennington2014} and deep learning techniques like the long-short-term memory conditional random field architecture~\cite{Lample2016}.
+Other workflows have opted to use end-to-end machine learning since the recent advent of word embedding techniques such as word2vec~\cite{Mikolov2013} and GloVe~\cite{Pennington2014} and deep learning techniques like the long-short-term memory conditional random field architecture~\cite{Lample2016}.
 Both variants require carefully constructed and annotated corpora such as GENIA~\cite{Kim2003} or those provided by the various BioCreative challenges (https://biocreative.bioinformatics.udel.edu).
 With machine learning techniques, the annotations become more important as they are also necessary for supervised learning.
 
@@ -137,3 +137,74 @@ This is discussed in the next section.
 Practically, mappings between equivalent terms in databases are manually curated by database maintainers and data stewards.
 As more of the nomenclatures, terminologies, and taxonomies useful to the bioinformatics community move towards ontological formats like OWL and OBO, these mappings become more reusable.
 Following, tools like the \ac{EBI} \ac{OLS}; Cote et al., 2006)~\cite{Cote2006} and emerging \ac{EBI}  Ontology Xref Service (https://www.ebi.ac.uk/spot/oxo) have been able to prove the community with technical solutions for storing, indexing, and looking up information about these terms.
+
+\subsection{Beyond Nomenclature and Standards for Reference}
+
+The ambiguity of nomenclature in the biomedical domain presents several problems
+
+- Have to use automated extraction processes over large body of literature, more quality assessment needed but not possible
+
+Anecdotally, there are few real-world data sets that HGNC gene symbols as identifiers that can be directly and fully mapped to HGNC entries.
+This is because the gene symbols listed by HGNC are notoriously unstable - hundreds or thousands change per year.
+These changes might be due to the splitting of a single gene entry into a family of entries, the merging of disparate genes that were the same, or deprecation of previous nomenclature.
+Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the impact of this issue due to the fact that the HGNC only lists the most recent date of change for each gene symbol.
+
+\begin{figure}
+    \captionsetup{format=plain}
+    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/gene_symbol_half_life.png}}
+    \caption[HGNC Gene Symbol Half Lives]{The frequency by which HGNC gene symbols change over time}
+    \label{fig:gene_symbol_half_life}
+\end{figure}
+
+The \ac{MIRIAM}~\cite{Laibe2007} standard was proposed as part of the Minimum Information for Biological and Biomedical Investigations~\cite{Taylor2008} in order to standardize the way biological entities are referenced in models and databases in order to address the issues with reproducibility arising from the previously described phenomena in natural language.
+At its core, \ac{MIRIAM} posits that instead of imprecise names, the bioinformatics community should shift towards using identifiers with five properties: unique (i.e., never assigned to two different entities), perennial (i.e., never changes and is permanent), standards compliant (i.e., conform to standards like \ac{URI}, \ac{CURIE}, etc.), free to use, and resolvable (i.e., can be transformed into locations of appropriate online resources).
+As Figure~\ref{fig:gene_symbol_half_life} suggests, \ac{HGNC} gene symbols are not perennial and are not \ac{MIRIAM} compliant.
+However, even a decade after the proposal of \ac{MIRIAM}, many databases have not shifted away from storing and annotating data with \ac{HGNC} gene symbols to using more stable \ac{HGNC} identifiers.
+Further, there has been little or no concerted efforts from authors and publishers to better annotate articles with identifiers for named entities.
+Thus \ac{NER} and entity linking remain relevant as ever, especially due to the increasing volume of literature describing increasingly complex biology across many scales.
+
+\section{Formalization of Knowledge}
+
+\subsection{Abstraction of Methodological, Conceptual, and Factual Knowledge}
+
+The most abstract level of knowledge, methodological knowledge, describes the formalisms through which knowledge can be represented.
+The two most common schemata for methodological knowledge are \ac{RDFS} and \ac{OWL}.
+They provide the faculty to describe the middle level, conceptual knowledge, which encodes the classes, relations, and constraints relevant to a given domain.
+The most common conceptual knowledge formats in the biomedical domain are \ac{BioPAX}, \ac{SBML}, and \ac{BEL}.
+The most concrete level is factual knowledge, which consists of instances of these classes and relationships~\cite{Marchetti2008}.
+These abstractions are illustrated in Figure~\ref{fig:knowledge_types}.
+
+\begin{figure}
+    \captionsetup{format=plain}
+    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/knowledge_types.png}}
+    \caption[Levels of Knowledge Abstraction]{The interplay of the three levels of knowledge abstraction in an example from the biological domain.}
+    \label{fig:knowledge_types}
+\end{figure}
+
+\subsection{Realizations}
+
+\subsubsection{Resource Description Framework Schema}
+
+\ac{RDF} uses triples of subjects, predicates, and objects to represent relations between concepts.
+Each resource in a triplet is backed by an \ac{IRI}.
+While its simple format grants it huge expressive power, \ac{RDF} lacks structure or domain specificity.
+\ac{RDFS} is a set of concepts and predicates appropriate for describing knowledge at the conceptual level.
+Included are predicates for asserting class hierarchies (rdfs:subClassOf), asserting memberships (rdf:type), describing the domain and range of predicates (rdfs:domain, rdfs:range), and representing epistemological concepts such as classes, literals, and other data types~\cite{Beckett2014}.
+RDF and RDFS are supported by most popular programming languages with packages to serialize and deserialize RDF in a variety of formats (e.g., \ac{XML}, N-Triples, turtle, etc.) and reason over \ac{RDFS}.
+
+\subsubsection{Web Ontology Language}
+
+Like \ac{RDFS}, \ac{OWL} consists of the methodological knowledge for modeling domain-specific knowledge.
+Its most simple form, \ac{OWL} Lite, enables the representation of classes, their properties, relations, and constraints.
+The most common form, \ac{OWL} \ac{DL}, contains the additional expressive power of descriptive logic over which inferences can be made.
+The most expressive form, \ac{OWL} Full, removes the remaining restrictions on \ac{OWL} \ac{DL} but paradoxically becomes undecidable and hinders automatic reasoning~\cite{Marchetti2008}.
+
+Figure X: The expressive levels of OWL ontologies adapted from~\cite{Marchetti2008}.
+
+\subsubsection{OBO}
+
+As the usage of ontologies began to percolate into the biomedical domain, Ashburner and Lewis proposed the \ac{OBO} standard~\cite{Ashburner2003} to encourage the standardization of formats and identifiers, to promote openness and community feedback, and to organize information in logical units.
+The OBO Foundry~\cite{Smith2007} has emerged as a central repository that has successfully supported collaboration such as the collation of several previously disparate ontologies into the Cell Line Ontology~\cite{Sarntivijai2014}.
+Because the syntax of \ac{OBO} is not directly compatible with \ac{OWL}, several converters have been exist to further support the integration of \ac{OBO} with other aspects of the Semantic Web.
+
+\section{Standardized Curation of Biological Pathways}
