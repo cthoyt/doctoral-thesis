@@ -30,10 +30,10 @@ As alluded to in the previous section, several committees and consortia have for
 
 \begin{table}
     \centering
-    \begin{tabular}{ c c c }
+    \begin{tabular}{ r l l }
         Organism & Database & Reference \\
         \hline
-        Human & HGNC &\cite{Yates2017} \\
+        Human & \ac{HGNC} &\cite{Yates2017} \\
         Vertebrae & VGNC &\cite{Yates2017} \\
         Mouse & MGI &\cite{Blake2017} \\
         Rat & RGD &\cite{Shimoyama2015} \\
@@ -56,7 +56,7 @@ Thus, several groups have attempted to standardize and control their nomenclatur
 
 \begin{table}
     \centering
-    \begin{tabular}{ c c }
+    \begin{tabular}{ r l }
         Entity Type & Resources \\
         \hline
         Transcripts & Ensembl, miRBase \\
@@ -77,7 +77,7 @@ Besides further synonyms and morphological variations, Bachman et al. (2018)~\ci
 
 \begin{table}
     \centering
-    \begin{tabular}{ c c }
+    \begin{tabular}{ r l }
         Affix Category & Example \\
         \hline
         Experimental context & eGFP-{Gene name} \\
@@ -124,35 +124,35 @@ Fifth, they generated features using a dictionary lookup on the MEDIC~\cite{Davi
 Sixth, they annotated abbreviations using BIOADI~\cite{Kuo2009}.
 
 Other workflows have opted to use end-to-end machine learning since the recent advent of word embedding techniques such as word2vec~\cite{Mikolov2013} and GloVe~\cite{Pennington2014} and deep learning techniques like the long-short-term memory conditional random field architecture~\cite{Lample2016}.
-Both variants require carefully constructed and annotated corpora such as GENIA~\cite{Kim2003} or those provided by the various BioCreative challenges (https://biocreative.bioinformatics.udel.edu).
+Both variants require carefully constructed and annotated corpora such as GENIA~\cite{Kim2003} or those provided by the various BioCreative challenges (\url{https://biocreative.bioinformatics.udel.edu}).
 With machine learning techniques, the annotations become more important as they are also necessary for supervised learning.
-
 
 \subsubsection*{Entity Linking}
 
 During the process of entity linking (i.e., normalization, grounding), named entities that have been recognized in the previous step are matched to terms in controlled vocabularies or databases.
-For example, this means that the token MEK1 should be recognized as a synonym of the MAP2K1 gene and subsequently grounded with the HGNC identifier hgnc:HGNC:6840, Entrez Gene identifier ncbigene:5604, UniProt identifier uniprot:Q02750, and any other desired equivalent identifiers.
-Note that each of these identifiers is written using the \ac{CURIE} style (e.g., an identifier prefixed with a namespace) and that the HGNC identifier includes a redundant mention of the namespace within the identifier.
+For example, this means that the token MEK1 should be recognized as a synonym of the MAP2K1 gene and subsequently grounded with the \ac{HGNC} identifier hgnc:HGNC:6840, Entrez Gene identifier ncbigene:5604, UniProt identifier uniprot:Q02750, and any other desired equivalent identifiers.
+Note that each of these identifiers is written using the \ac{CURIE} style (e.g., an identifier prefixed with a namespace) and that the \ac{HGNC} identifier includes a redundant mention of the namespace within the identifier.
 This is discussed in the next section.
 Practically, mappings between equivalent terms in databases are manually curated by database maintainers and data stewards.
 As more of the nomenclatures, terminologies, and taxonomies useful to the bioinformatics community move towards ontological formats like OWL and OBO, these mappings become more reusable.
-Following, tools like the \ac{EBI} \ac{OLS}; Cote et al., 2006)~\cite{Cote2006} and emerging \ac{EBI}  Ontology Xref Service (https://www.ebi.ac.uk/spot/oxo) have been able to prove the community with technical solutions for storing, indexing, and looking up information about these terms.
+Following, tools like the \ac{EBI} \ac{OLS}~\cite{Cote2006} and emerging \ac{EBI} Ontology Xref Service (\url{https://www.ebi.ac.uk/spot/oxo}) have been able to prove the community with technical solutions for storing, indexing, and looking up information about these terms.
 
 \subsection{Beyond Nomenclature and Standards for Reference}
 
+% TODO check this section
 The ambiguity of nomenclature in the biomedical domain presents several problems
 
 - Have to use automated extraction processes over large body of literature, more quality assessment needed but not possible
 
-Anecdotally, there are few real-world data sets that HGNC gene symbols as identifiers that can be directly and fully mapped to HGNC entries.
-This is because the gene symbols listed by HGNC are notoriously unstable - hundreds or thousands change per year.
+Anecdotally, there are few real-world data sets that \ac{HGNC} gene symbols as identifiers that can be directly and fully mapped to \ac{HGNC} entries.
+This is because the gene symbols listed by \ac{HGNC} are notoriously unstable - hundreds or thousands change per year.
 These changes might be due to the splitting of a single gene entry into a family of entries, the merging of disparate genes that were the same, or deprecation of previous nomenclature.
-Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the impact of this issue due to the fact that the HGNC only lists the most recent date of change for each gene symbol.
+Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the impact of this issue due to the fact that the \ac{HGNC} only lists the most recent date of change for each gene symbol.
 
 \begin{figure}
     \captionsetup{format=plain}
     \makebox[\textwidth]{\includegraphics[width=160mm]{figures/gene_symbol_half_life.png}}
-    \caption[HGNC Gene Symbol Half Lives]{The frequency by which HGNC gene symbols change over time}
+    \caption[HGNC Gene Symbol Half Lives]{The frequency by which \ac{HGNC} gene symbols change over time}
     \label{fig:gene_symbol_half_life}
 \end{figure}
 
@@ -199,7 +199,12 @@ Its most simple form, \ac{OWL} Lite, enables the representation of classes, thei
 The most common form, \ac{OWL} \ac{DL}, contains the additional expressive power of descriptive logic over which inferences can be made.
 The most expressive form, \ac{OWL} Full, removes the remaining restrictions on \ac{OWL} \ac{DL} but paradoxically becomes undecidable and hinders automatic reasoning~\cite{Marchetti2008}.
 
-Figure X: The expressive levels of OWL ontologies adapted from~\cite{Marchetti2008}.
+\begin{figure}
+    \captionsetup{format=plain}
+    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/owl_types.png}}
+    \caption[Descriptive Levels of OWL]{The expressive levels of OWL ontologies. Adapted from~\cite{Marchetti2008}.}
+    \label{Fig:owl_types}
+\end{figure}
 
 \subsubsection{OBO}
 
@@ -207,4 +212,213 @@ As the usage of ontologies began to percolate into the biomedical domain, Ashbur
 The OBO Foundry~\cite{Smith2007} has emerged as a central repository that has successfully supported collaboration such as the collation of several previously disparate ontologies into the Cell Line Ontology~\cite{Sarntivijai2014}.
 Because the syntax of \ac{OBO} is not directly compatible with \ac{OWL}, several converters have been exist to further support the integration of \ac{OBO} with other aspects of the Semantic Web.
 
-\section{Standardized Curation of Biological Pathways}
+\subsection{Standardized Curation of Biological Pathways}
+
+As biological knowledge is generated from experiments or extracted from the literature it must be stored in a standard format to be generally useful.
+This section describes several of those formats and their applicability domains.
+
+\subsubsection{Biological Pathways Exchange Language}
+
+\ac{BioPAX} uses \ac{OWL} to define the conceptual knowledge in the domain of biological pathways on the molecular and cellular level.
+Its ability to collect and index metabolic, signaling, molecular, gene-regulatory, and genetic interaction networks makes it an ideal exchange format for the growing number of pathway databases with varying specificities in regards to target organisms and disease indications~\cite{Demir2010}.
+
+This was realized with the aggregation of several pathway and interaction databases (e.g., BindingDB~\cite{Gilson2016}, DrugBank~\cite{Law2014}, IntAct~\cite{Orchard2014}, \ac{KEGG}~\cite{Kanehisa2017}, Reactome~\cite{Fabregat2016}, WikiPathways~\cite{Pico2008}, etc.) to form the Pathway Commons Database~\cite{Cerami2011}.
+Immediately, this database enabled exploration of molecular interactions at the highest granularity.
+For example, it powers the Enrichment Map Cytoscape Plugin~\cite{Merico2010} that was used to support data-driven analysis in identifying medulloblastoma subgraphs based on intratumoral heterogeneity~\cite{Cavalli2017}.
+
+\subsubsection{Systems Biology Markup Language}
+
+\ac{SBML} uses a completely custom formalism defined with \ac{XMLS} to represent the dynamic and quantitative aspects of biochemical reactions, signal transduction, and gene regulatory networks\cite{Hucka2003}.
+Like \ac{BioPAX}, it provides the conceptual framework necessary to encode knowledge in the biomedical domain.
+\ac{SBML} also provides the basis for CellDesigner~\cite{Funahashi2003}, which has been incredibly successful in allowing biologists without informatics backgrounds to diagram gene regulatory and biochemical networks as well as import them to graphical ordinary differential equation solvers and simulation workflows.
+
+\subsubsection{Gene Ontology Causal Activity Models}
+
+\acp{GOCAM} (\url{https://geneontology.cloud/docs}) combine disparate \ac{GO} annotations to generate networks of relationships between genes, their molecular functions, the biological processes in which they participate, and the cellular components in which they reside.
+Relationships between genes can be expressed using terms from the Relations Ontology (\url{http://www.obofoundry.org/ontology/ro.html}) and processed using its rich set of axioms.
+\acp{GOCAM} are relatively new compared to the other formats, but have the potential to provide the most standardized interpretation of the molecular interactions for which \ac{GO} is already the standard resource.
+
+\subsubsection{Biological Expression Language}
+
+\ac{BEL} supports the assembly of context-specific qualitative causal and correlative relations between biological entities across multiple scales.
+Statements are assembled and serialized in \ac{BEL} Script with full provenance information including namespace references, relation provenance (citation and evidence), and relation metadata such as biological context (i.e. anatomy, cell, disease, etc.)~\cite{Slater2014}.
+The schemata of BEL relations and BEL Scripts are depicted in Figures~\ref{fig:bel_relation} and~\ref{fig:bel_script}, respectively.
+
+Data-driven network analyses on \ac{BEL} knowledge assemblies have been successfully performed across a wide variety of clinical applications, including the identification of upstream controllers in hepatocytes~\cite{Deehan2012}, mechanistic hypothesis generation for drug response~\cite{Laifenfeld2014}, and patient stratification~\cite{Laifenfeld2012} by using over-representation analysis techniques developed such as \ac{RCR}~\cite{Catlett2013} and pathway topological analytical methods such as \ac{NPA}~\cite{Martin2014}.
+
+\begin{figure}
+    \captionsetup{format=plain}
+    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/bel_relation.png}}
+    \caption[The Schema of a BEL Relation]{A BEL relation is encoded as a triplet containing a subject, a predicate, and an object. The predicate can represents the type of relation while the subject and object can either represent the abundance of molecular entities such as genes, proteins, chemicals, or more abstract concepts such as biochemical reactions, biological processes, and pathologies. Identifiers for these concepts use references to external namespaces (Figure 4B) to qualify their respective names. In this example, \ac{ChEBI}~\cite{Hastings2013} is used to qualify chemicals and \ac{MeSH}\cite{ROGERS1963} for biological processes.}
+    \label{fig:bel_relation}
+\end{figure}
+
+\begin{figure}
+    \captionsetup{format=plain}
+    \makebox[\textwidth]{\includegraphics[scale=0.6]{figures/bel_script.png}}
+    \caption[The Schema of a BEL Script]{A BEL Script contains three sections: A) the document metadata section provides provenance information such as the name, version, and author; B) the definitions section provides references to external resources that are used as identifiers and metadata in the relations section; and C) the relations section contains BEL relations and their metadata: minimally including a citation and evidence with the possibility to include additional information such as biological context (e.g., cell, anatomy, disease).}
+    \label{fig:bel_script}
+\end{figure}
+
+BEL was developed by Selventa, a bioinformatics and computational biology consulting firm, to support knowledge-driven analysis of data.
+In 2012, they released the \ac{BEL} v1.0 specification as an open standard through the OpenBEL Consortium.
+However, the inability of BEL to express important concepts in molecular biology (such as genetic variants) prompted the \ac{BEL} v2.0 revision in 2014.
+
+The foray into new disease areas and clinical indications has necessitated the assembly of knowledge on wider scales from the genetic to the phenotypic and population levels.
+While most modeling languages and data formats for assembling knowledge are insufficient for such a task, BEL possesses the faculty for capturing multi-scale knowledge.
+
+In the same way \ac{BioPAX} was successful at combining many molecular pathway and interaction database, \ac{BEL} has the potential to serve as a semantic integration platform through which knowledge and data across scales can be integrated and analyzed.
+\ac{BEL} can be used to reason over the previously untapped sources of chemogenomic and chemical genetic information in the realm of disease-disease, disease-protein, disease-chemical, and chemical-chemical networks.
+
+Modeling interactions across scales is not without its issues.
+As biological processes, pathologies, and phenotypes represent collections of molecular interactions, they are prone to having excessive associative and correlative relations to other biological entities.
+This biases typical graph mining algorithms that rely on graph traversals to visit these types of nodes, and therefore produce less meaningful results.
+While it is not within the scope of this thesis, there are many solutions for addressing these issues whose complexities vary from simple filtering to empirical traversal rules or adding extra rules for traversals.
+
+\subsubsection{Systems Biology Graphical Notation}
+
+\ac{SBGN}~\cite{LeNovere2009} attempts to address the inconsistency and ambiguity of current non-standardized notations for biological pathways that is problematic among \ac{BioPAX}, \ac{SBML}, \ac{BEL}, and other standardized notations.
+It encompasses three variants: processes diagrams, entity relationship diagrams, and activity flow diagrams.
+In a process diagram, each entity is depicted along with its transformations to other entities and the regulators of those processes.
+In the entity relationship diagram, each entity appears only once and relationships are considered independent.
+In the activity flow diagram, the mechanistic underpinnings are eschewed in favor of directly presenting the influence between entities.
+This variant is most related to \ac{BEL} and \acp{GOCAM}, while the others are more useful for the specific mechanistic processes that are often described in \ac{SBML} models.
+
+\subsection{Standardized Curation of Biological Knowledge}
+
+There exists thousands of biological data databases describing different biological phenomena with varying semantics and levels of granularity (Table~\ref{table:biological_relations}).
+While many have begun to use standardized ontologies and knowledge formats, many remain.
+Further, the use of standard formats does not guarantee interoperability~\cite{Domingo-Fernandez2019a}.
+Integrative approaches have begun to alleviate this burden for domain-specific use cases (e.g., gene set enrichment analysis on pathway and gene set databases).
+In Chapter~\autoref{chap:bio2bel}, a general approach for creating integrative databases using BEL is described.
+
+\begin{table}
+    \centering
+    \begin{tabular}{ r l }
+        Quality & Choices \\
+        \hline
+        Types of Relation & Causal, Correlative, Associative, Ontological \\
+        Directionality of Relation & Unidirectional or Bidirectional (reflexive) \\
+        Polarity of Relation & Increases, Decreases, None \\
+        Causality of Relation & Direct or Indirect \\
+        Modes of Entity & Activity, Abundance, Efflux  \\
+        Modifications of Entity & Post-translational modifications, gene/protein fusions, mutations \\
+        States of Entity & Subcellular Location, pre-/post-conditions \\
+
+    \end{tabular}
+    \caption{Examples of qualities of biological relationships and their attributes}
+    \label{table:biological_relations}
+\end{table}
+
+Further, the quantity of knowledge in the biomedical domain is increasing at an unprecedented rate — with no signs of deceleration.
+Even with the assistance of information retrieval technologies, it is overwhelming, if not impossible, for individuals or groups of researchers to be knowledgeable of the state-of-the-art in any but an incredibly specific topic.
+Therefore, researchers need the assistance of automated relation extraction systems to assist in the enrichment of previously existing knowledge available and integrated from relevant, high-quality databases.
+
+The work in this thesis makes use of an ensemble of natural language processing-based, rule-based, and machine-learning based relation extraction systems through the \ac{INDRA} interface.
+References to several of its constituent general purpose and biology-specific relation extraction systems are listed in Table~\ref{table:relation_extraction_systems}.
+Additionally, a sampling of BEL-specific relation extraction systems popularized by the corresponding BioCreative V BEL Task (\url{https://biocreative.bioinformatics.udel.edu/tasks/biocreative-v/track-4-bel-task}).
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{ l l l }
+        Type & Name & Reference \\
+        \hline
+        \multirow{4}{*}{General Purpose} & Eidos & \url{https://github.com/clulab/eidos} \\
+        & TRIPS/CWMS & \url{http://trips.ihmc.us/parser/cgi/cwmsreader} \\
+        & Hume & \url{https://github.com/BBN-E/Hume} \\
+        & Sofia & \url{https://sofia.worldmodelers.com/ui/} \\
+        \hline
+        \multirow{8}{*}{Biology-Specific} & \ac{TEES} & \url{https://github.com/jbjorne/TEES} \\
+        & \ac{REACH} & \url{https://github.com/clulab/reach} \\
+        & TRIPS/DRUM & \url{http://trips.ihmc.us/parser/cgi/drum} \\
+        & Sparser & \url{https://github.com/ddmcdonald/sparser} \\
+        & MedScan &\cite{Novichkova2003} \\
+        & RLIMS-P & \url{https://research.bioinformatics.udel.edu/rlimsp}  \\
+        & ISI/AMR & \url{https://githu..com/sgarg87/big_mech_isi_gg} \\
+        & Geneways &\cite{Rzhetsky2004} \\
+        \hline
+        \multirow{4}{*}{\ac{BEL}-Specific} & \ac{BELIEF} &\cite{Madan2016} \\
+        & BelSmile &\cite{Lai2016} \\
+        & BELTracker &\cite{Rastegar-Mojarad2016} \\
+        & BELMiner &\cite{Ravikumar2017} \\
+    \end{tabular}
+    \caption{Examples of relation extraction and reading systems with varying degrees of domain specificity}
+    \label{table:relation_extraction_systems}
+\end{table}
+
+\subsubsection{Issues with Automated Relation Extraction Systems}
+
+Neither relation extraction systems based on rules, natural language processing, nor machine learning are without their issues.
+None constitute general artificial intelligence, and thus all require maintenance and improvement to sustain their abilities to process recent scientific literature; each requires increasingly large and carefully annotated corpora to support the generation of new rules or train the extraction system to recognize new relationships.
+
+Because relation extraction systems have many subsystems with their own subtasks, the errors from each propagate throughout.
+Named entity recognition remains a difficult task due to the availability and generation of supporting ontologies that precisely describe given terms.
+Though it remains unpublished and tangential to the work presented in this thesis, during the course of the curation of unstructured information outlined in Chapter~\autoref{chap:recuration}, an ontology was generated to capture the complex terminology surrounding the human microtubule associated protein Tau.
+It was then extended during curation of other related candidate pathophysiological mechanisms of the aetiology of \ac{AD} and named the \ac{CONSO}~(\url{https://github.com/pharmacome/terminology}).
+While \ac{CONSO} formalizes the terminology and discourse from the scientific literature for protein aggregation processes in several neurodegenerative diseases (e.g., Huntington's disease, \ac{AD}, Parkinson's disease), it also illustrates that the large and ongoing effort required to formalize a single area of molecular biology is not easily scaled to cover all possible biology.
+
+The realization of relation extraction systems eschews an important aspect of systems and networks biology: the biological context.
+By focusing on the sentence level, it remains difficult, if not impossible, for these systems to extract the information pertaining to the cell, cell line, tissue, model organism, disease context, or other contextual information that is crucial for the understanding of complex biology.
+
+Even with its issues, automated curation can be incredibly powerful when combined with manual curation in semi-automated workflows.
+With careful generation of new terminologies, the inclusion of contextual information that can currently best be found by purely manual effort, and rational prioritization of automatically generated content for manual review, semi-automated workflows can make huge improvements blah blah. % TODO FINISH ME
+
+\section{Algorithms Applicable to Graphs}
+
+Algorithms for analyzing pathways and networks have been placed  into three main categories by~\cite{Khatri2012}: \ac{ORA}, \ac{FCS}, and \ac{PT}.
+\ac{ORA} often focuses on the number of differentially expressed genes present or absent in a gene set compared to chance, while \ac{FCS} is less susceptible to large effects and considers the aggregate of groups of small effects.
+\ac{PT} finally considers the biological relations between members of the pathway during analysis.
+
+\subsection{BEL Algorithms}
+
+Furthermore, Martin \textit{et al.} made the distinction between methods that rely on the assumption that protein activities are correlated with their corresponding mRNAs' expression changes (forward reasoning) versus the effect that upstream controllers of mRNA expression have (backwards reasoning)~\cite{Martin2014}.
+These algorithms have been developed for a wide variety of applications, data formats, and graph types.
+While many are heterogeneous, below are the most notable algorithms specific to networks from knowledge assemblies encoded in BEL.
+
+\subsubsection{Reverse Causal Reasoning}
+
+Reverse causal reasoning (\ac{RCR}) is an approach to identify the upstream controllers of biological patterns measured in an experiment; often differential gene expression experiments between healthy and diseased patients.
+First, large knowledge assemblies are dissected into smaller hypothesis networks with one upstream node with multiple outgoing causal relations to target nodes represented by the experimental data set.
+Each hypothesis network is scored by its concordance between the observed up- and down-regulations of targets nodes to the sign of the causal relation and by its richness, or the explanatory power of the hypothesis network~\cite{Catlett2013}.
+An example hypothesis network is shown in Figure~\ref{fig:rcr_schematic}.
+
+\begin{figure}
+\captionsetup{format=plain}
+\makebox[\textwidth]{\includegraphics[width=160mm]{figures/rcr_schematic.png}}
+\caption[A Schematic Diagram of \ac{RCR}]{An example hypothesis network. Target nodes are counted as correct if they have a decreasing relationship and down-regulation, or an increasing relationship and up-regulation. Target nodes with multiple conflicting relationships are marked as ambiguous. Finally, target nodes are counted as incorrect if they have a mismatch between an increasing relationship and down-regulation, or a decreasing relationship and up-regulation. Adapted from~\cite{Catlett2013}.}
+\label{fig:rcr_schematic}
+\end{figure}
+
+\subsubsection{Network Perturbation Amplitude}
+
+While \ac{RCR} gives preliminary insights to significant biological controllers, it mostly ignores the topology of signaling, regulatory, and other causal networks that can be represented in knowledge assemblies (Figure~\ref{fig:npa_schematic}).
+The \ac{NPA} measures the aggregated effect explained by the controller layer with reference to a given node with respect to their downstream nodes.
+Two complementary statistics for the effect of permutations of the upstream layer and downstream layer allow for further insight to the validity of \ac{NPA}s as a hypothesis generation mechanism~\cite{Martin2014}.
+
+\begin{figure}
+\captionsetup{format=plain}
+\makebox[\textwidth]{\includegraphics[width=160mm]{figures/npa_schematic.png}}
+\caption[Hypothesis Network Generation for Network Perturbation Amplitude]{Creation of hypothesis networks that accounts for the topology and interactions of  upstream controller layer with respect to a reference node A), their individual effects on the downstream layer B) and their combine effect C). Adapted from~\cite{Martin2012}.}
+\label{fig:npa_schematic}
+\end{figure}
+
+\subsubsection{Sampling of Spanning Trees}
+
+While \ac{NPA} enables more informed analyses than \ac{RCR}, its mathematical basis limits the topologies of knowledge networks that can be used to those with causal consistency.
+In these networks, all paths from one node to another result in the same aggregated effect of increases and decreases.
+An additional approach in Figure~\ref{fig:sst_schematic} for \ac{SST} with random walkers eliminates inconsistencies and can be aggregated over multiple trials to assign \ac{NPA} scores to networks that were otherwise inconsistent~\cite{Vasilyev2014}.
+
+\begin{figure}
+\captionsetup{format=plain}
+\makebox[\textwidth]{\includegraphics[width=160mm]{figures/sst_example.png}}
+\caption[Decomposition of Spanning Trees]{An example decomposition of a small causally inconsistent network A) to its spanning trees B)\cite{Vasilyev2014}.}
+\label{fig:sst_schematic}
+\end{figure}
+
+\subsection{Network Representation Learning}
+
+\section{Applications}
+\subsection{Simulation}
+\subsection{Target Prioritization}
+\subsection{Mechanism of Action Deconvolution}
