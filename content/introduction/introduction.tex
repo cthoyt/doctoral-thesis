@@ -1,4 +1,5 @@
 \chapter{Introduction}
+\label{ch:introduction}
 
 \section{Nomenclature}
 
@@ -26,7 +27,7 @@ Most biologically relevant named entities go by many names.
 For example, many genes were discovered and characterized in different labs and therefore named differently.
 As resources for exchanging genomic and protein sequences have become more ubiquitous in the last thirty years, it has become easier to reduce those duplicates.
 However, this does not solve the problem of establishing a canonical name for each entity.
-As alluded to in the previous section, several committees and consortia have formed to standardize the nomenclature used for genes for each species (Table~\ref{table:gene_nomenclature_databases}).
+As alluded to in the previous section, several committees and consortia have formed to standardize the nomenclature used for genes for each species (Table~\ref{tab:gene_nomenclature_databases}).
 
 \begin{table}
     \centering
@@ -44,7 +45,7 @@ As alluded to in the previous section, several committees and consortia have for
         - & Entrez Gene &\cite{Maglott2011}  \\
     \end{tabular}
     \caption{Example model organism gene nomenclature databases}
-    \label{table:gene_nomenclature_databases}
+    \label{tab:gene_nomenclature_databases}
 \end{table}
 
 \subsection{Nomenclature Consortia of Other Entities}
@@ -52,7 +53,7 @@ As alluded to in the previous section, several committees and consortia have for
 Besides gene nomenclature, there are several other biologically relevant physical entities and higher-order processes that have have the same issues in nomenclature.
 Further, for higher-order processes like pathways, mechanisms, and biological processes, it not only remains unclear what to name each, but where their boundaries lie.
 However, deference to entities beyond genes and proteins are required to fully describe complex biology.
-Thus, several groups have attempted to standardize and control their nomenclature (Table~\ref{table:other_nomenclature_databases}).
+Thus, several groups have attempted to standardize and control their nomenclature (Table~\ref{tab:other_nomenclature_databases}).
 
 \begin{table}
     \centering
@@ -68,12 +69,12 @@ Thus, several groups have attempted to standardize and control their nomenclatur
         Conditions and Phenotypes & Disease Ontology, Human Phenotype Ontology, MeSH
     \end{tabular}
     \caption{Example entity types of interest in the biomedical domain and corresponding nomenclature sources}
-    \label{table:other_nomenclature_databases}
+    \label{tab:other_nomenclature_databases}
 \end{table}
 
 \subsection{Practical Considerations in Named Entity Recognition}
 
-Besides further synonyms and morphological variations, Bachman et al. (2018)~\cite{Bachman2018} outlined several affixes corresponding to post-translational modification state, experimental context, or other categories (Table~\ref{table:affix_categories}).
+Besides further synonyms and morphological variations, Bachman et al. (2018)~\cite{Bachman2018} outlined several affixes corresponding to post-translational modification state, experimental context, or other categories (Table~\ref{tab:affix_categories}).
 
 \begin{table}
     \centering
@@ -88,7 +89,7 @@ Besides further synonyms and morphological variations, Bachman et al. (2018)~\ci
         mRNA grounding & {Gene name} mRNA
     \end{tabular}
     \caption{Examples of affix categories in the FamPlex ontology adapted from Table 2 of~\cite{Bachman2018}}
-    \label{table:affix_categories}
+    \label{tab:affix_categories}
 \end{table}
 
 Bachman \textit{et al.} also considered issues with recognizing proteins, protein families, and protein complexes~\cite{Bachman2018}.
@@ -112,7 +113,7 @@ Recent work has focused on using recurrent neural networks with architectures su
 \subsubsection*{Named Entity Recognition}
 
 During the process of \ac{NER}, words or phrases are identified to have domain-specific, non-trivial meaning.
-In the biomedical domain, \ac{NER} is used to identify proteins~\cite{Hsu2008,Leaman2008, Hakenberg2011,Wei2015}, chemicals~\cite{Leaman2015,Corbett2018,Giorgi526244}, diseases~\cite{Leaman2013,Giorgi526244}, taxa~\cite{Gerner2010,Wei2012}, and other entity types listed in Table~\ref{table:other_nomenclature_databases}.
+In the biomedical domain, \ac{NER} is used to identify proteins~\cite{Hsu2008,Leaman2008, Hakenberg2011,Wei2015}, chemicals~\cite{Leaman2015,Corbett2018,Giorgi526244}, diseases~\cite{Leaman2013,Giorgi526244}, taxa~\cite{Gerner2010,Wei2012}, and other entity types listed in Table~\ref{tab:other_nomenclature_databases}.
 
 Unlike the clear difference between the rule-based and natural language processing models of coreference resolution versus the machine learning techniques, \ac{NER} workflows often contain a mixture of preprocessing steps, rule-based feature generation, statistical models, machine learning models, and postprocessing steps.
 For example, Lee \textit{et al.}~\cite{Lee2015} defined six feature classes for training a disease recognition model using a conditional random field.
@@ -139,10 +140,7 @@ Following, tools like the \ac{EBI} \ac{OLS}~\cite{Cote2006} and emerging \ac{EBI
 
 \subsection{Beyond Nomenclature and Standards for Reference}
 
-% TODO check this section
-The ambiguity of nomenclature in the biomedical domain presents several problems
-
-- Have to use automated extraction processes over large body of literature, more quality assessment needed but not possible
+The ambiguity of nomenclature in the biomedical domain presents several problems, especially as the acceleration of publication makes automated information extraction more relevant.
 
 Anecdotally, there are few real-world data sets that \ac{HGNC} gene symbols as identifiers that can be directly and fully mapped to \ac{HGNC} entries.
 This is because the gene symbols listed by \ac{HGNC} are notoriously unstable - hundreds or thousands change per year.
@@ -151,7 +149,7 @@ Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the
 
 \begin{figure}
     \captionsetup{format=plain}
-    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/gene_symbol_half_life.png}}
+    \makebox[\textwidth]{\includegraphics[width=100mm]{figures/gene_symbol_half_life.png}}
     \caption[HGNC Gene Symbol Half Lives]{The frequency by which \ac{HGNC} gene symbols change over time}
     \label{fig:gene_symbol_half_life}
 \end{figure}
@@ -260,10 +258,6 @@ Data-driven network analyses on \ac{BEL} knowledge assemblies have been successf
     \label{fig:bel_script}
 \end{figure}
 
-BEL was developed by Selventa, a bioinformatics and computational biology consulting firm, to support knowledge-driven analysis of data.
-In 2012, they released the \ac{BEL} v1.0 specification as an open standard through the OpenBEL Consortium.
-However, the inability of BEL to express important concepts in molecular biology (such as genetic variants) prompted the \ac{BEL} v2.0 revision in 2014.
-
 The foray into new disease areas and clinical indications has necessitated the assembly of knowledge on wider scales from the genetic to the phenotypic and population levels.
 While most modeling languages and data formats for assembling knowledge are insufficient for such a task, BEL possesses the faculty for capturing multi-scale knowledge.
 
@@ -285,12 +279,13 @@ In the activity flow diagram, the mechanistic underpinnings are eschewed in favo
 This variant is most related to \ac{BEL} and \acp{GOCAM}, while the others are more useful for the specific mechanistic processes that are often described in \ac{SBML} models.
 
 \subsection{Standardized Curation of Biological Knowledge}
+\label{subsec:standardized_curation}
 
-There exists thousands of biological data databases describing different biological phenomena with varying semantics and levels of granularity (Table~\ref{table:biological_relations}).
+There exists thousands of biological data databases describing different biological phenomena with varying semantics and levels of granularity (Table~\ref{tab:biological_relations}).
 While many have begun to use standardized ontologies and knowledge formats, many remain.
 Further, the use of standard formats does not guarantee interoperability~\cite{Domingo-Fernandez2019a}.
 Integrative approaches have begun to alleviate this burden for domain-specific use cases (e.g., gene set enrichment analysis on pathway and gene set databases).
-In Chapter~\autoref{chap:bio2bel}, a general approach for creating integrative databases using BEL is described.
+In Chapter~\autoref{ch:bio2bel}, a general approach for creating integrative databases using BEL is described.
 
 \begin{table}
     \centering
@@ -307,7 +302,7 @@ In Chapter~\autoref{chap:bio2bel}, a general approach for creating integrative d
 
     \end{tabular}
     \caption{Examples of qualities of biological relationships and their attributes}
-    \label{table:biological_relations}
+    \label{tab:biological_relations}
 \end{table}
 
 Further, the quantity of knowledge in the biomedical domain is increasing at an unprecedented rate — with no signs of deceleration.
@@ -315,7 +310,7 @@ Even with the assistance of information retrieval technologies, it is overwhelmi
 Therefore, researchers need the assistance of automated relation extraction systems to assist in the enrichment of previously existing knowledge available and integrated from relevant, high-quality databases.
 
 The work in this thesis makes use of an ensemble of natural language processing-based, rule-based, and machine-learning based relation extraction systems through the \ac{INDRA} interface.
-References to several of its constituent general purpose and biology-specific relation extraction systems are listed in Table~\ref{table:relation_extraction_systems}.
+References to several of its constituent general purpose and biology-specific relation extraction systems are listed in Table~\ref{tab:relation_extraction_systems}.
 Additionally, a sampling of BEL-specific relation extraction systems popularized by the corresponding BioCreative V BEL Task (\url{https://biocreative.bioinformatics.udel.edu/tasks/biocreative-v/track-4-bel-task}).
 
 
@@ -324,13 +319,15 @@ Additionally, a sampling of BEL-specific relation extraction systems popularized
     \begin{tabular}{ l l l }
         Type & Name & Reference \\
         \hline
-        \multirow{4}{*}{General Purpose} & Eidos & \url{https://github.com/clulab/eidos} \\
+        \multirow{4}{*}{General Purpose}
+        & Eidos & \url{https://github.com/clulab/eidos} \\
         & TRIPS/CWMS & \url{http://trips.ihmc.us/parser/cgi/cwmsreader} \\
         & Hume & \url{https://github.com/BBN-E/Hume} \\
         & Sofia & \url{https://sofia.worldmodelers.com/ui/} \\
         \hline
-        \multirow{8}{*}{Biology-Specific} & \ac{TEES} & \url{https://github.com/jbjorne/TEES} \\
-        & \ac{REACH} & \url{https://github.com/clulab/reach} \\
+        \multirow{8}{*}{Biology-Specific}
+        & TEES & \url{https://github.com/jbjorne/TEES} \\
+        & REACH & \url{https://github.com/clulab/reach} \\
         & TRIPS/DRUM & \url{http://trips.ihmc.us/parser/cgi/drum} \\
         & Sparser & \url{https://github.com/ddmcdonald/sparser} \\
         & MedScan &\cite{Novichkova2003} \\
@@ -338,13 +335,14 @@ Additionally, a sampling of BEL-specific relation extraction systems popularized
         & ISI/AMR & \url{https://githu..com/sgarg87/big_mech_isi_gg} \\
         & Geneways &\cite{Rzhetsky2004} \\
         \hline
-        \multirow{4}{*}{\ac{BEL}-Specific} & \ac{BELIEF} &\cite{Madan2016} \\
+        \multirow{4}{*}{\ac{BEL}-Specific}
+        & BELIEF &\cite{Madan2016} \\
         & BelSmile &\cite{Lai2016} \\
         & BELTracker &\cite{Rastegar-Mojarad2016} \\
         & BELMiner &\cite{Ravikumar2017} \\
     \end{tabular}
     \caption{Examples of relation extraction and reading systems with varying degrees of domain specificity}
-    \label{table:relation_extraction_systems}
+    \label{tab:relation_extraction_systems}
 \end{table}
 
 \subsubsection{Issues with Automated Relation Extraction Systems}
@@ -353,24 +351,27 @@ Neither relation extraction systems based on rules, natural language processing,
 None constitute general artificial intelligence, and thus all require maintenance and improvement to sustain their abilities to process recent scientific literature; each requires increasingly large and carefully annotated corpora to support the generation of new rules or train the extraction system to recognize new relationships.
 
 Because relation extraction systems have many subsystems with their own subtasks, the errors from each propagate throughout.
-Named entity recognition remains a difficult task due to the availability and generation of supporting ontologies that precisely describe given terms.
-Though it remains unpublished and tangential to the work presented in this thesis, during the course of the curation of unstructured information outlined in Chapter~\autoref{chap:recuration}, an ontology was generated to capture the complex terminology surrounding the human microtubule associated protein Tau.
+\ac{NER} remains a difficult task due to the availability and generation of supporting ontologies that precisely describe given terms.
+Though it remains unpublished and tangential to the work presented in this thesis, during the course of the curation of unstructured information outlined in Chapter~\autoref{ch:recuration}, an ontology was generated to capture the complex terminology surrounding the human microtubule associated protein Tau.
 It was then extended during curation of other related candidate pathophysiological mechanisms of the aetiology of \ac{AD} and named the \ac{CONSO}~(\url{https://github.com/pharmacome/terminology}).
-While \ac{CONSO} formalizes the terminology and discourse from the scientific literature for protein aggregation processes in several neurodegenerative diseases (e.g., Huntington's disease, \ac{AD}, Parkinson's disease), it also illustrates that the large and ongoing effort required to formalize a single area of molecular biology is not easily scaled to cover all possible biology.
+While \ac{CONSO} formalizes the terminology and discourse from the scientific literature for protein aggregation processes in several neurodegenerative diseases (e.g., Huntington's disease, \ac{AD}, \ac{PD}), it also illustrates that the large and ongoing effort required to formalize a single area of molecular biology is not easily scaled to cover all possible biology.
 
 The realization of relation extraction systems eschews an important aspect of systems and networks biology: the biological context.
 By focusing on the sentence level, it remains difficult, if not impossible, for these systems to extract the information pertaining to the cell, cell line, tissue, model organism, disease context, or other contextual information that is crucial for the understanding of complex biology.
 
 Even with its issues, automated curation can be incredibly powerful when combined with manual curation in semi-automated workflows.
-With careful generation of new terminologies, the inclusion of contextual information that can currently best be found by purely manual effort, and rational prioritization of automatically generated content for manual review, semi-automated workflows can make huge improvements blah blah. % TODO FINISH ME
+With careful generation of new terminologies, the inclusion of contextual information that can currently best be found by purely manual effort, and rational prioritization of automatically generated content for manual review, semi-automated workflows can make huge improvements in both the quantity, quality, and relevance of knowledge assembles.
+Ultimately, these improvements lead to better downstream analysis as described in the following.
 
 \section{Algorithms Applicable to Graphs}
+\label{sec:algorithms}
 
 Algorithms for analyzing pathways and networks have been placed  into three main categories by~\cite{Khatri2012}: \ac{ORA}, \ac{FCS}, and \ac{PT}.
 \ac{ORA} often focuses on the number of differentially expressed genes present or absent in a gene set compared to chance, while \ac{FCS} is less susceptible to large effects and considers the aggregate of groups of small effects.
 \ac{PT} finally considers the biological relations between members of the pathway during analysis.
 
 \subsection{BEL Algorithms}
+\label{subsec:bel_algorithms}
 
 Furthermore, Martin \textit{et al.} made the distinction between methods that rely on the assumption that protein activities are correlated with their corresponding mRNAs' expression changes (forward reasoning) versus the effect that upstream controllers of mRNA expression have (backwards reasoning)~\cite{Martin2014}.
 These algorithms have been developed for a wide variety of applications, data formats, and graph types.
@@ -416,9 +417,6 @@ An additional approach in Figure~\ref{fig:sst_schematic} for \ac{SST} with rando
 \label{fig:sst_schematic}
 \end{figure}
 
-\subsection{Network Representation Learning}
+\input{content/introduction/nrl}
 
-\section{Applications}
-\subsection{Simulation}
-\subsection{Target Prioritization}
-\subsection{Mechanism of Action Deconvolution}
+\input{content/introduction/applications}
