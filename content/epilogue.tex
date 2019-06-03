@@ -1,8 +1,49 @@
-\chapter{Epilog}
+\chapter{Epilogue}
 \label{ch:conclusion}
 
-\section{Conclusions}
+\section{Summary}
 
-\section{Outlook}
+The work in this thesis can be best summarized in three sections: 1) generation of an ecosystem for \ac{BEL}, 2) development of methods and tools for enriching biological knowledge graphs, and 3) applications of knowledge graphs in simulation, modeling, and analysis of data.
+
+In Chapter~\ref{ch:pybel}, the PyBEL ecosystem was introduced in order to support the parsing, validation, and manipulation of biological knowledge graphs encoded in \ac{BEL}.
+It was shown to support the implementation of algorithms and interoperability with other systems and networks biology tools such as NDEx.
+In Chapter~\ref{ch:belcommons}, the BEL Commons web application was introduced as a way to make the tools implemented with PyBEL accessible to a wider variety of users who have different skill sets.
+It was shown to support knowledge-assisted analysis of \textit{-omics} data and provide interactive exploration of biological knowledge graphs.
+
+In Chapter~\ref{ch:recuration}, PyBEL was used in two ways to support quality assurance and enrichment of biological knowledge graphs in \ac{BEL}.
+First, a re-curation workflow was proposed using version control systems, continuous integration, and a novel extension to PyBEL that can directly interface with git.
+Second, PyBEL was integrated with \ac{INDRA} and semi-automated relation extraction workflow was generated that prioritized curation of low information-density areas of a given biological knowledge graph.
+In Chapter~\ref{ch:bio2bel}, Bio2BEL was introduced as both a philosophy and accompanying framework for reproducibly acquiring and integrating multi-modal and multi-scale knowledge from many sources in \ac{BEL}.
+Several applications of the Bio2BEL framework that have already been published in peer-reviewed journals were presented as examples of the impact and utility of Bio2BEL.
+
+In Chapter~\ref{ch:bel2abm}, the first of the three applications of highly enriched biological knowledge graphs was presented.
+In it, BEL2ABM was shown to be able to convert static biological knowledge graphs into dynamic, executable agent-based models that could recapitulate ordinary differential equation models of biological systems after undergoing parameter optimization.
+In Chapter~\ref{ch:guiltytargets}, GuiltyTargets was introduced as an alternative to topological feature engineering that, when applied in the target prioritization task, outperformed the previous state of the art.
+These results implied that network representation learning on biological knowlege graphs has huge potential in not only target prioritization, but potentially any tasks that rely on feature engineering from knowledge graphs.
+In the Chapter~\ref{ch:guiltytargets}, the final application was presented about using biological knowledge graphs annotated with disease specificity to not only deconvolute the mechanism of action of the drug, carbamazepine, but to hypothesize an explanation for its epidemiologically observed multi-indication effects in \ac{AD} and epilepsy.
 
 \section{Future Work}
+
+While this thesis only represents work that has been finalized and written as full manuscripts, there is a significant amount of ongoing work stemming from each portion.
+I expect that the PyBEL ecosystem and BEL Commons will evolve to suit new algorithms and new needs from the community.
+Maintaining software is not often considered by academics, but much care has been placed to ensure this is possible.
+As Bio2BEL is extensible and demonstrably facile for external developers, I also expect it to grow along with the generation and publication of new and exciting biological data sources.
+
+The most interesting future work lies with the generation of new analytical techniques using network representation learning to solve similar and new problems relevant to drug discovery.
+Following the completion of Ozlem Muslu's master's thesis, which was the basis for GuiltyTargets, four new master's theses concerning 1) the incorporation of phenome-wide association studies, 2) the application of network representation learning to the drug repositioning workflow presented by Himmelstein \textit{et al.}~\cite{Himmelstein2017}, 3) the benchmarking of network representation learning in multi-modal graphs for deconvolution of mechanism of actions causing side effects, and 4) alternate ways to include disease-specific signatures in underlying networks before representation learning and application of target prioritization.
+
+% TODO add more here about epicom 2, talk with daniel. Mention precision medicine? more INDRA?
+
+\section{Impact and Reflections}
+
+As the preface and postface to most of the chapters containing the articles included in this thesis, the work presented here has not been done in a vacuum.
+I have built each component of this thesis built upon the last, until the PyBEL ecosystem that was originally developed in 2016 became a platform for doing systems and networks biology that vastly transcends its original goal of being a new and stable compiler for \ac{BEL}.
+
+While I have used the passive voice throughout this thesis to describe the work that has been done, it would be blasphemous to finish without crediting all of the wonderful scientists with whom I've written each of the included papers.
+The work I have done during the course of my doctorate has not been done in isolation; it has been used and improved by several members my group at the Fraunhofer SCAI Department of Bioinformatics throughout their own master's and doctoral theses.
+Each of them has left their own footprints throughout.
+Conversely, I've also had the pleasure to incorporate the work of others into mine; unabashedly, and without worry of jealousy or conflict.
+
+The work presented here has also provided support to the partners in our projects and to the wider community.
+As I reflect on the work I have done in my doctorate, I believe that the openness with which I have done my work has lead to some of my most interesting work and some of the most interesting collaborations; many of which I have not included here (but if you're interested, that work won't be hard to find, either).
+I find it exciting to consider that as I finalize my doctorate, that my work may continue, even without me.
