@@ -14,7 +14,7 @@ In Chapter~\ref{ch:recuration}, PyBEL was used in two ways to support quality as
 First, a re-curation workflow was proposed using version control systems, continuous integration, and a novel extension to PyBEL that can directly interface with git.
 Second, PyBEL was integrated with \ac{INDRA} and semi-automated relation extraction workflow was generated that prioritized curation of low information-density areas of a given biological knowledge graph.
 In Chapter~\ref{ch:bio2bel}, Bio2BEL was introduced as both a philosophy and accompanying framework for reproducibly acquiring and integrating multi-modal and multi-scale knowledge from many sources in \ac{BEL}.
-Several applications of the Bio2BEL framework that have already been published in peer-reviewed journals were presented as examples of the impact and utility of Bio2BEL.
+Several applications of the Bio2BEL framework that have already been published in peer-reviewed journals were presented as examples of the impact and utility of Bio2BEL\@.
 
 In Chapter~\ref{ch:bel2abm}, the first of the three applications of highly enriched biological knowledge graphs was presented.
 In it, BEL2ABM was shown to be able to convert static biological knowledge graphs into dynamic, executable agent-based models that could recapitulate ordinary differential equation models of biological systems after undergoing parameter optimization.
@@ -28,22 +28,28 @@ While this thesis only represents work that has been finalized and written as fu
 I expect that the PyBEL ecosystem and BEL Commons will evolve to suit new algorithms and new needs from the community.
 Maintaining software is not often considered by academics, but much care has been placed to ensure this is possible.
 As Bio2BEL is extensible and demonstrably facile for external developers, I also expect it to grow along with the generation and publication of new and exciting biological data sources.
+More specifically, the PyBEL and BEL Commons codebase will be incorporated into the next release of the NeuroMMSig Mechanism Enrichment Server from~\cite{Domingo-Fernandez2017}.
+It will also include features from Bio2BEL to more dynamically link to other resources, as well as directly querying compounds as a fourth modality in addition to genes, mutations, and clinical features.
 
 The most interesting future work lies with the generation of new analytical techniques using network representation learning to solve similar and new problems relevant to drug discovery.
-Following the completion of Ozlem Muslu's master's thesis, which was the basis for GuiltyTargets, four new master's theses concerning 1) the incorporation of phenome-wide association studies, 2) the application of network representation learning to the drug repositioning workflow presented by Himmelstein \textit{et al.}~\cite{Himmelstein2017}, 3) the benchmarking of network representation learning in multi-modal graphs for deconvolution of mechanism of actions causing side effects, and 4) alternate ways to include disease-specific signatures in underlying networks before representation learning and application of target prioritization.
+Following the completion of \"{O}zlem Muslu's Master's Thesis, which was the basis for \textit{GuiltyTargets}, four new master's theses concerning 1) the incorporation of phenome-wide association studies, 2) the application of network representation learning to the drug repositioning workflow presented by Himmelstein \textit{et al.}~\cite{Himmelstein2017}, 3) the benchmarking of network representation learning in multi-modal graphs for deconvolution of mechanism of actions causing side effects, and 4) alternate ways to include disease-specific signatures in underlying networks before representation learning and application of target prioritization.
+While the publication from Chapter~\ref{ch:epicom} focused on a single drug in the context of two diseases, the methods can be more generally applied across all drugs listed in DrugBank~\cite{Wishart2018} and all diseases covered by NeuroMMSig to identify further repositioning candidates.
+Further, this could lead to an interesting exploration of chemical space and the scaffolds that occur in multi-indication drugs.
 
-% TODO add more here about epicom 2, talk with daniel. Mention precision medicine? more INDRA?
+In order to support the inclusion of new neurodegenerative diseases in NeuroMMSig like Huntington's disease and Multiple Sclerosis, several additions can be made to the rational enrichment pipeline presented in Chapter~\ref{ch:recuration}.
+First, it can be presented as a web interface and more tightly integrated with the visualization tools included in BEL Commons.
+Second, network representation learning can also be used to automatically assign \ac{BEL} statements to subgraphs in NeuroMMSig using a combination of the inter-database pathway mappings included in ComPath~\cite{Domingo-Fernandez2018} and the BioKEEN~\cite{Ali2019} software.
 
-\section{Impact and Reflections}
+\section{Impact, Reflections, and Acknowledgements}
 
 As the preface and postface to most of the chapters containing the articles included in this thesis, the work presented here has not been done in a vacuum.
 I have built each component of this thesis built upon the last, until the PyBEL ecosystem that was originally developed in 2016 became a platform for doing systems and networks biology that vastly transcends its original goal of being a new and stable compiler for \ac{BEL}.
 
-While I have used the passive voice throughout this thesis to describe the work that has been done, it would be blasphemous to finish without crediting all of the wonderful scientists with whom I've written each of the included papers.
+While I have used the passive voice throughout this thesis to describe the work that has been done, it would be blasphemous to finish without crediting all of the wonderful scientists with whom I've written each of the included publications.
 The work I have done during the course of my doctorate has not been done in isolation; it has been used and improved by several members my group at the Fraunhofer SCAI Department of Bioinformatics throughout their own master's and doctoral theses.
 Each of them has left their own footprints throughout.
 Conversely, I've also had the pleasure to incorporate the work of others into mine; unabashedly, and without worry of jealousy or conflict.
 
 The work presented here has also provided support to the partners in our projects and to the wider community.
 As I reflect on the work I have done in my doctorate, I believe that the openness with which I have done my work has lead to some of my most interesting work and some of the most interesting collaborations; many of which I have not included here (but if you're interested, that work won't be hard to find, either).
-I find it exciting to consider that as I finalize my doctorate, that my work may continue, even without me.
+I find it exciting to consider that as this thesis comes to a close, that my work may continue, even without me.

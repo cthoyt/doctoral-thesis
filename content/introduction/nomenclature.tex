@@ -1,6 +1,7 @@
 \section{Nomenclature}
 
 The first two sections of the introduction examine the organization of biomedical knowledge, and several of the challenges faced during the process.
+These challenges span from unifying the nomenclature of biologically relevant entities used in the published biomedical literature to extracting the biological knowledge and context surrounding those entities.
 
 \subsection{Issues with Gene Nomenclature}
 
@@ -73,7 +74,7 @@ Thus, several groups have attempted to standardize and control their nomenclatur
 
 \subsection{Practical Considerations in Named Entity Recognition}
 
-Besides further synonyms and morphological variations, Bachman et al. (2018)~\cite{Bachman2018} outlined several affixes corresponding to post-translational modification state, experimental context, or other categories (Table~\ref{tab:affix_categories}).
+Besides further synonyms and morphological variations, Bachman \textit{et al.}~\cite{Bachman2018} outlined several affixes corresponding to post-translational modification state, experimental context, or other categories (Table~\ref{tab:affix_categories}).
 
 \begin{table}
     \centering
@@ -114,16 +115,18 @@ Recent work has focused on using recurrent neural networks with architectures su
 During the process of \ac{NER}, words or phrases are identified to have domain-specific, non-trivial meaning.
 In the biomedical domain, \ac{NER} is used to identify proteins~\cite{Hsu2008,Leaman2008, Hakenberg2011,Wei2015}, chemicals~\cite{Leaman2015,Corbett2018,Giorgi526244}, diseases~\cite{Leaman2013,Giorgi526244}, taxa~\cite{Gerner2010,Wei2012}, and other entity types listed in Table~\ref{tab:other_nomenclature_databases}.
 
-Unlike the clear difference between the rule-based and natural language processing models of coreference resolution versus the machine learning techniques, \ac{NER} workflows often contain a mixture of preprocessing steps, rule-based feature generation, statistical models, machine learning models, and postprocessing steps.
-For example, Lee \textit{et al.}~\cite{Lee2015} defined six feature classes for training a disease recognition model using a conditional random field.
-First, they generated morphological features that contained the original tokens, the corresponding stemmed tokens, and their affixes.
-Second, they generated features based on their terminology of trigger words related to diseases, body parts, and human ability.
-Third, they generated classical part-of-speech features.
-Fourth, they transformed the original tokens to remove continued vowels, such as the superfluous "u" in the british spelling of tumour.
-Fifth, they generated features using a dictionary lookup on the MEDIC~\cite{Davis2012} disease dictionary.
-Sixth, they annotated abbreviations using BIOADI~\cite{Kuo2009}.
+Unlike the difference between machine learning models of coreference resolution with rule-based or natural language processing models, \ac{NER} workflows often contain a mixture of preprocessing steps, rule-based feature generation, statistical models, machine learning models, and postprocessing steps.
+For example, Lee \textit{et al.}~\cite{Lee2015} defined six feature classes for training a disease recognition model using a conditional random field:
+\begin{enumerate}
+    \item morphological features that contained the original tokens, the corresponding stemmed tokens, and their affixes
+    \item features based on their terminology of trigger words related to diseases, body parts, and human ability
+    \item classical part-of-speech features.
+    \item transformation of the original tokens to remove continued vowels, such as the superfluous "u" in the british spelling of tumour.
+    \item features using a dictionary lookup on the MEDIC~\cite{Davis2012} disease dictionary.
+    \item annotated abbreviations using BIOADI~\cite{Kuo2009}.
+\end{enumerate}
 
-Other workflows have opted to use end-to-end machine learning since the recent advent of word embedding techniques such as word2vec~\cite{Mikolov2013} and GloVe~\cite{Pennington2014} and deep learning techniques like the long-short-term memory conditional random field architecture~\cite{Lample2016}.
+Other workflows have opted to use end-to-end machine learning following the advent of word embedding techniques such as word2vec~\cite{Mikolov2013} and GloVe~\cite{Pennington2014} and deep learning techniques like the long-short-term memory conditional random field architecture~\cite{Lample2016}.
 Both variants require carefully constructed and annotated corpora such as GENIA~\cite{Kim2003} or those provided by the various BioCreative challenges (\url{https://biocreative.bioinformatics.udel.edu}).
 With machine learning techniques, the annotations become more important as they are also necessary for supervised learning.
 
@@ -135,14 +138,14 @@ Note that each of these identifiers is written using the \ac{CURIE} style (e.g.,
 This is discussed in the next section.
 Practically, mappings between equivalent terms in databases are manually curated by database maintainers and data stewards.
 As more of the nomenclatures, terminologies, and taxonomies useful to the bioinformatics community move towards ontological formats like OWL and OBO, these mappings become more reusable.
-Following, tools like the \ac{EBI} \ac{OLS}~\cite{Cote2006} and emerging \ac{EBI} Ontology Xref Service (\url{https://www.ebi.ac.uk/spot/oxo}) have been able to prove the community with technical solutions for storing, indexing, and looking up information about these terms.
+Concurrently, tools like the \ac{EBI} \ac{OLS}~\cite{Cote2006} and emerging \ac{EBI} Ontology Xref Service (\url{https://www.ebi.ac.uk/spot/oxo}) have been able to prove the community with technical solutions for storing, indexing, and looking up information about these terms.
 
 \subsection{Beyond Nomenclature and Standards for Reference}
 
 The ambiguity of nomenclature in the biomedical domain presents several problems, especially as the acceleration of publication makes automated information extraction more relevant.
 
-Anecdotally, there are few real-world data sets that \ac{HGNC} gene symbols as identifiers that can be directly and fully mapped to \ac{HGNC} entries.
-This is because the gene symbols listed by \ac{HGNC} are notoriously unstable - hundreds or thousands change per year.
+Anecdotally, there are few real-world data sets using \ac{HGNC} gene symbols as identifiers that can be directly and fully mapped to \ac{HGNC} entries.
+This is because the gene symbols listed by \ac{HGNC} are notoriously unstable - hundreds or thousands change per year (Figure~\ref{fig:gene_symbol_half_life}).
 These changes might be due to the splitting of a single gene entry into a family of entries, the merging of disparate genes that were the same, or deprecation of previous nomenclature.
 Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the impact of this issue due to the fact that the \ac{HGNC} only lists the most recent date of change for each gene symbol.
 
@@ -153,9 +156,9 @@ Further, Figure~\ref{fig:gene_symbol_half_life} provides an underestimate of the
     \label{fig:gene_symbol_half_life}
 \end{figure}
 
-The \ac{MIRIAM}~\cite{Laibe2007} standard was proposed as part of the Minimum Information for Biological and Biomedical Investigations~\cite{Taylor2008} in order to standardize the way biological entities are referenced in models and databases in order to address the issues with reproducibility arising from the previously described phenomena in natural language.
+The \ac{MIRIAM}~\cite{Laibe2007} standard was proposed in order to standardize the way named biological entities are referenced in models and databases in order to address the issues with reproducibility arising from the previously described phenomena in natural language as part of the Minimum Information for Biological and Biomedical Investigations~\cite{Taylor2008}.
 At its core, \ac{MIRIAM} posits that instead of imprecise names, the bioinformatics community should shift towards using identifiers with five properties: unique (i.e., never assigned to two different entities), perennial (i.e., never changes and is permanent), standards compliant (i.e., conform to standards like \ac{URI}, \ac{CURIE}, etc.), free to use, and resolvable (i.e., can be transformed into locations of appropriate online resources).
 As Figure~\ref{fig:gene_symbol_half_life} suggests, \ac{HGNC} gene symbols are not perennial and are not \ac{MIRIAM} compliant.
 However, even a decade after the proposal of \ac{MIRIAM}, many databases have not shifted away from storing and annotating data with \ac{HGNC} gene symbols to using more stable \ac{HGNC} identifiers.
 Further, there has been little or no concerted efforts from authors and publishers to better annotate articles with identifiers for named entities.
-Thus \ac{NER} and entity linking remain relevant as ever, especially due to the increasing volume of literature describing increasingly complex biology across many scales.
+Thus, \ac{NER} and entity linking remain relevant as ever, especially due to the increasing volume of literature describing increasingly complex biology across many scales.

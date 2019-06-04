@@ -22,7 +22,7 @@ These abstractions are illustrated in Figure~\ref{fig:knowledge_types}.
 
 \ac{RDF} uses triples of subjects, predicates, and objects to represent relations between concepts.
 Each resource in a triplet is backed by an \ac{IRI}.
-While its simple format grants it huge expressive power, \ac{RDF} lacks structure or domain specificity.
+While its simple format grants it expressive power, \ac{RDF} lacks structure or domain specificity.
 \ac{RDFS} is a set of concepts and predicates appropriate for describing knowledge at the conceptual level.
 Included are predicates for asserting class hierarchies (rdfs:subClassOf), asserting memberships (rdf:type), describing the domain and range of predicates (rdfs:domain, rdfs:range), and representing epistemological concepts such as classes, literals, and other data types~\cite{Beckett2014}.
 RDF and RDFS are supported by most popular programming languages with packages to serialize and deserialize RDF in a variety of formats (e.g., \ac{XML}, N-Triples, turtle, etc.) and reason over \ac{RDFS}.
@@ -36,12 +36,12 @@ The most expressive form, \ac{OWL} Full, removes the remaining restrictions on \
 
 \begin{figure}
     \captionsetup{format=plain}
-    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/owl_types.png}}
+    \makebox[\textwidth]{\includegraphics[width=100mm]{figures/owl_types.png}}
     \caption[Descriptive Levels of OWL]{The expressive levels of OWL ontologies. Adapted from~\cite{Marchetti2008}.}
     \label{Fig:owl_types}
 \end{figure}
 
-\subsubsection{OBO}
+\subsubsection{Open Biomedical Ontologies}
 
 As the usage of ontologies began to percolate into the biomedical domain, Ashburner and Lewis proposed the \ac{OBO} standard~\cite{Ashburner2003} to encourage the standardization of formats and identifiers, to promote openness and community feedback, and to organize information in logical units.
 The OBO Foundry~\cite{Smith2007} has emerged as a central repository that has successfully supported collaboration such as the collation of several previously disparate ontologies into the Cell Line Ontology~\cite{Sarntivijai2014}.
@@ -63,7 +63,7 @@ For example, it powers the Enrichment Map Cytoscape Plugin~\cite{Merico2010} tha
 
 \subsubsection{Systems Biology Markup Language}
 
-\ac{SBML} uses a completely custom formalism defined with \ac{XMLS} to represent the dynamic and quantitative aspects of biochemical reactions, signal transduction, and gene regulatory networks\cite{Hucka2003}.
+\ac{SBML} uses a completely custom formalism defined with \ac{XML} to represent the dynamic and quantitative aspects of biochemical reactions, signal transduction, and gene regulatory networks\cite{Hucka2003}.
 Like \ac{BioPAX}, it provides the conceptual framework necessary to encode knowledge in the biomedical domain.
 \ac{SBML} also provides the basis for CellDesigner~\cite{Funahashi2003}, which has been incredibly successful in allowing biologists without informatics backgrounds to diagram gene regulatory and biochemical networks as well as import them to graphical ordinary differential equation solvers and simulation workflows.
 
@@ -112,7 +112,7 @@ While it is not within the scope of this thesis, there are many solutions for ad
 It encompasses three variants: processes diagrams, entity relationship diagrams, and activity flow diagrams.
 In a process diagram, each entity is depicted along with its transformations to other entities and the regulators of those processes.
 In the entity relationship diagram, each entity appears only once and relationships are considered independent.
-In the activity flow diagram, the mechanistic underpinnings are eschewed in favor of directly presenting the influence between entities.
+In the activity flow diagram, a direct presentation of the influence between entities is favored over their relationships' mechanistic underpinnings.
 This variant is most related to \ac{BEL} and \acp{GOCAM}, while the others are more useful for the specific mechanistic processes that are often described in \ac{SBML} models.
 
 \subsection{Standardized Curation of Biological Knowledge}
@@ -193,9 +193,8 @@ Though it remains unpublished and tangential to the work presented in this thesi
 It was then extended during curation of other related candidate pathophysiological mechanisms of the aetiology of \ac{AD} and named the \ac{CONSO}~(\url{https://github.com/pharmacome/terminology}).
 While \ac{CONSO} formalizes the terminology and discourse from the scientific literature for protein aggregation processes in several neurodegenerative diseases (e.g., Huntington's disease, \ac{AD}, \ac{PD}), it also illustrates that the large and ongoing effort required to formalize a single area of molecular biology is not easily scaled to cover all possible biology.
 
-The realization of relation extraction systems eschews an important aspect of systems and networks biology: the biological context.
+Despite their recent improvements, automated relation extraction systems still omit an important aspect of systems and networks biology: the biological context.
 By focusing on the sentence level, it remains difficult, if not impossible, for these systems to extract the information pertaining to the cell, cell line, tissue, model organism, disease context, or other contextual information that is crucial for the understanding of complex biology.
-
-Even with its issues, automated curation can be incredibly powerful when combined with manual curation in semi-automated workflows.
+Even with their issues, automated relation extraction systems can be incredibly powerful when combined with manual curation in semi-automated workflows.
 With careful generation of new terminologies, the inclusion of contextual information that can currently best be found by purely manual effort, and rational prioritization of automatically generated content for manual review, semi-automated workflows can make huge improvements in both the quantity, quality, and relevance of knowledge assembles.
 Ultimately, these improvements lead to better downstream analysis as described in the following.

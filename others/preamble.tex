@@ -12,7 +12,7 @@
 \usepackage{xcolor}										%used to color font
 \usepackage{paralist}									%used to add inline lists inside paragraphs (inparaenum command)
 \usepackage{graphicx}									%used to add figures
-\usepackage[hidelinks]{hyperref}						%used for autoref, linking ref to the object and so links are not a different color
+\usepackage[]{hyperref}	% used for autoref, linking ref to the object and so links are not a different color
 \usepackage[left=3cm, right=3cm]{geometry}				%used to specify margins and such
 \usepackage{setspace}									%used for the stretch comman in caption
 \usepackage{pdfpages}									%used to include pdfs directly
@@ -37,6 +37,14 @@
 %    maxbibnames=99,
 %    backend=biber
 %]{biblatex}
+\usepackage[
+    citestyle=chem-acs,
+    maxbibnames=5,
+    doi=false,
+    isbn=false,
+    url=false,
+    backend=biber
+]{biblatex}
 
 \usepackage{url}
 

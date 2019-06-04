@@ -48,7 +48,7 @@ An additional approach in Figure~\ref{fig:sst_schematic} for \ac{SST} with rando
 \begin{figure}
 \captionsetup{format=plain}
 \makebox[\textwidth]{\includegraphics[width=160mm]{figures/sst_example.png}}
-\caption[Decomposition of Spanning Trees]{An example decomposition of a small causally inconsistent network A) to its spanning trees B)\cite{Vasilyev2014}.}
+\caption[Decomposition of Spanning Trees]{An example decomposition of a small causally inconsistent network A) to its spanning trees B)~\cite{Vasilyev2014}.}
 \label{fig:sst_schematic}
 \end{figure}
 
@@ -56,12 +56,11 @@ An additional approach in Figure~\ref{fig:sst_schematic} for \ac{SST} with rando
 \label{subsec:nrl}
 
 Representation learning methods have the goal of generating low-dimensional, continuous vector representations for entities in high-dimensional, heterogeneous data sets (e.g., images, text sequences, etc.).
-More specifically, network representation learning, also known as \ac{KGE}, learns representations of nodes and edges from \ac{KG}s in continuous vector spaces that can be used in downstream machine learning tasks such as edge prediction, entity clustering, and entity disambiguation~\cite{Wang2017}.
+More specifically, network representation learning, also known as \ac{KGE}, learns representations of nodes and edges from \acp{KG} in continuous vector spaces that can be used in downstream machine learning tasks such as edge prediction, entity clustering, and entity disambiguation~\cite{Wang2017}.
 Several methods inspired by linear algebra, deep learning, and natural language processing have arisen in previous years as shown in Table~\ref{tab:kgem_examples}.
 
 \begin{table}
     \centering
-    \caption{Examples of three types of \ac{KGEM}s}\label{tab:kgem_examples}
     \begin{tabular}{ l l l }
         \hline
         Type & Model & Reference \\
@@ -88,6 +87,7 @@ Several methods inspired by linear algebra, deep learning, and natural language 
         & LINE & ~\cite{Tang2015} \\
         \hline
     \end{tabular}
+    \caption{Examples of three types of \acp{KGEM}}\label{tab:kgem_examples}
 \end{table}
 
 \subsubsection{Translational Distance Models}
@@ -123,17 +123,17 @@ Both translational distance models and semantic matching models can be trained u
 
 \subsubsection{Random Walk Models}
 
-Random walk models generate embeddings for nodes in knowledge graphs by applying the concepts from natural language models (e.g., SkipGram, Word2Vec, and GloVE) to random walks.
-The first, \textit{DeepWalk}~\cite{Perozzi2014}, used random walks to train a SkipGram~\cite{Mikolov2013} model in which the random walks were considered as sentences and nodes were considered as words.
-Because SkipGram is a language model that maximizes the co-occurrence probability of words in the same window, the resulting node vectors reflect the local structure of the input \ac{KG} (Figure~\ref{fig:deepwalk_embedding}).
-It is further rationalized by the observation that the distribution of nodes' appearances in random walks mirrors that of words in free text~\cite{Perozzi2014}.
+Random walk models generate embeddings for nodes in knowledge graphs by applying the concepts from natural language models (e.g., \textit{SkipGram}, \textit{word2Vec}, and \textit{GloVE}) to random walks.
+The first, \textit{DeepWalk}~\cite{Perozzi2014}, used random walks to train a \textit{SkipGram}~\cite{Mikolov2013} model in which the random walks were considered as sentences and nodes were considered as words.
+Because \textit{SkipGram} is a language model that maximizes the co-occurrence probability of words in the same window, the resulting node vectors reflect the local structure of the input \ac{KG} (Figure~\ref{fig:deepwalk_embedding}).
+It is further rationalized by the observation that the distribution of nodes' appearances in random walks mirrors words in free text~\cite{Perozzi2014}.
 
 \begin{figure}
     \captionsetup{format=plain}
-    \makebox[\textwidth]{\includegraphics[width=120mm]{figures/deepwalk_embedding.png}}
+    \makebox[\textwidth]{\includegraphics[width=160mm]{figures/deepwalk_embedding.png}}
     \caption{\textit{DeepWalk} produces embeddings that reflect the community structure of the underlying \ac{KG}. Figure adapted from ~\cite{Perozzi2014}}
     \label{fig:deepwalk_embedding}
 \end{figure}
 
-Biological knowledge encoded in many of the previously mentioned formats (e.g., \ac{BioPAX}, \ac{SBML}) can be directly translated into \ac{KG}s to which network representation learning can be applied.
+Biological knowledge encoded in many of the previously mentioned formats (e.g., \ac{BioPAX}, \ac{SBML}) can be directly translated into \acp{KG} to which network representation learning can be applied.
 The following subsection describes two of such applications in drug discovery.
