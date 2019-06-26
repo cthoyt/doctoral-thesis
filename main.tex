@@ -13,6 +13,16 @@
 \begin{document}
     \include{others/prologue}
 
+    \fancyhf{} % clear all header and footers
+    \renewcommand{\headrulewidth}{0pt} % remove the header rule
+    \fancyfoot[LO,RE]{\thepage} % Left side on Odd pages; Right side on Even pages
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{%
+    	\fancyhf{}%
+    	\renewcommand{\headrulewidth}{0pt}%
+    	\fancyhf[lof,ref]{\thepage}%
+    }
+    
     \pagenumbering{arabic} % restart page numbering with arabic numbers
     \setlength{\parskip}{1em} % set space between paragraphs
     \renewcommand{\baselinestretch}{1.2} % set line spacing
