@@ -3,7 +3,9 @@
 \section*{Preface}
 
 The following publication describes BEL Commons: a web application that enables exploration and analysis of networks encoded in \ac{BEL} as well as the integration of several disparate features from other prominent web applications for systems and networks biology.
-It highlights the way the web application allows for integrative exploration of several publicly available knowledge bases and provides an example of data-driven analysis using publicly available differential gene expression data sets related to \ac{AD}.
+While PyBEL, described in Chapter~\ref{ch:pybel}, rejuvenated the aging \ac{BEL} ecosystem, it did not yet make the new tools or algorithms accessible to a general audience of biologists interested in systems and networks biology research.
+BEL Commons attempts to address that accessibility gap.
+The publication highlights the way BEL Commons allows for integrative exploration of several publicly available knowledge bases and provides an example from the \ac{IMI} project, AETIONOMY, of a combine data- and knowledge-driven analysis using publicly available differential gene expression data sets related to \ac{AD} and knowledge assemblies from NeuroMMSig\cite{Domingo-Fernandez2017}.
 
 \vspace*{\fill}
 
@@ -17,4 +19,12 @@ Copyright © Hoyt, C.T., \textit{et al.}, 2018.
 One of the issues of the accessibility of \ac{BEL} mentioned in Chapter~\ref{ch:pybel} was the ability for users to use previously published algorithms.
 With a web interface that guides users through applying those algorithms, BEL Commons moves the community closer to overcoming that issue.
 More generally, BEL Commons enables users who are less familiar with programming to access the \ac{BEL} ecosystem.
-Finally, the article motivated several improvements, such as the deeper integration of the PyBEL ecosystem with \ac{INDRA}~\cite{Gyori2017} in order to support semi-automated curation and enrichment of knowledge graphs as well as the importation of other formats like \ac{BioPAX} and \ac{SBML} that are realized in Chapter~\ref{ch:recuration}.
+BEL Commons acts as a source of BEL content that can be downloaded for downstream applications, such as the knowledge graph embeddings described by~\cite{Ali2019}, using a novel extension to PyBEL's data interchange\footnote{\url{https://pybel.readthedocs.io/en/latest/reference/io.html}}.
+Finally, the publication motivated several improvements, such as the deeper integration of the PyBEL ecosystem with \ac{INDRA}~\cite{Gyori2017} in order to support semi-automated curation and enrichment of knowledge graphs as well as the importation of other formats like \ac{BioPAX} and \ac{SBML} that are realized in Chapter~\ref{ch:recuration}.
+
+\subsection*{Impact}
+
+In addition to the direct usage of PyBEL described in the postface of Chapter~\ref{ch:pybel}, BEL Commons has supported both curators and end-users of BEL in these projects.
+Following publication, BEL Commons has been made open source at \url{https://github.com/bel-commons} with several tools for containerization and deployment as scalable microservices using Docker and Docker-Compose.
+This may lead to even greater uptake, as the original deployment of BEL Commons was hosted on a Fraunhofer server, which may have been disallowed by industrial users.
+Finally, BEL Commons will be the cornerstone of an upcoming project with Philip Morris International, who also have significant participation in the \ac{BEL} community.
