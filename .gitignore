@@ -11,3 +11,5 @@ main.fdb_latexmk
 main.blg
 main.fls
 main.dvi
+main.lof
+main.lot

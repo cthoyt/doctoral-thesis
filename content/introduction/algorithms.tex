@@ -48,7 +48,7 @@ An additional approach in Figure~\ref{fig:sst_schematic} for \ac{SST} with rando
 \begin{figure}
 \captionsetup{format=plain}
 \makebox[\textwidth]{\includegraphics[width=160mm]{figures/sst_example.png}}
-\caption[Decomposition of Spanning Trees]{An example decomposition of a small causally inconsistent network A) to its spanning trees B)~\cite{Vasilyev2014}.}
+\caption[Decomposition of Spanning Trees]{An example decomposition of a small causally inconsistent network A) to its spanning trees B). Figure adapted from~\cite{Vasilyev2014}.}
 \label{fig:sst_schematic}
 \end{figure}
 
@@ -105,6 +105,26 @@ It measures the plausibility of a given the following scoring function:
 The closer the embedding of the tail is to the sum of the head and relation embeddings, the higher is the probability that the triple is correct.
 However, because TransE is limited in modeling $1-N$, $N-1$, and to $N-M$ relations, several extensions have been proposed (e.g., TransH, TransR, and TransD).
 
+TransH extends TransE by representing each relation in a relation-specific hyperplane with normal vector $w_r$~\cite{Wang2014}.
+Before scoring, the head and tail entities are projected using the following equations before using a the same scoring function as in TransE.
+
+\begin{equation} \label{eq:trans_h_proj_head}
+h_{\perp} = h -w_{r}^\top hw_r
+\end{equation}
+
+\begin{equation} \label{eq:trans_h_proj_tail}
+t_{\perp} = t -w_{r}^\top tw_r
+\end{equation}
+
+Finally, the translation vector $r$ from TransH is constrained to be within the hyperplane defined by $w_r$ before applying the following scoring function.
+
+\begin{equation} \label{eq:trans_h_scoring_function}
+    f_r(h,t) = -\|h_{\perp} + r - t_{\perp}\|_{2}^2
+\end{equation}
+
+Alternatively, TransR~\cite{Lin2015} and TransD~\cite{Ji2015} use independent projection matricies for the head and tail entities to allow for greater expressibility.
+However, these models have more parameters and thus require more data to train well.
+
 \subsubsection{Semantic Matching Models}
 
 Unlike translational distance models, semantic matching models use similarity-based scoring functions that measure the plausibility of a given triple based on the "latent semantics" of the entities and relations~\cite{Wang2017}.
@@ -115,25 +135,42 @@ It represents each entity as a vector and each relation as a matrix, $M_r$, that
     f_r(h,t) = h^{T} M_{r} t
 \end{equation}
 
-Both translational distance models and semantic matching models can be trained using the margin ranked loss in order to maximize the difference between true (i.e., positive) and false (i.e., negative) triples.
+The DistMult model simplifies RESCAL by restricting $M_r$ to be a diagonal matrix, denoted as $diag(r)$ in order to reduce the number of model parameters while simultaneously improving the efficiency of computation~\cite{Yang2014}.
+
+\begin{equation} \label{eq:distmult_scoring_function}
+    f_r(h,t) = h^{T} diag(r) t
+\end{equation}
+
+Both translational distance models and semantic matching models can be trained using the margin ranked loss~\cite{Nickel2016,Dettmers2017} in order to maximize the difference between positive triples (i.e.,~$f_r(h,t)$) and negative ones (i.e.,~$f_r(h^{'},t^{'}$).
+This scoring function has the benefits that it can readily integrate a variety of scoring functions $f_r(h, t)$ and it is amenable to the possibility that a negative triple may also be true, but just not included in the knowledge graph.
+The margin ranking loss can be optimized with stochastic gradient descent while iterating through batches of positive triples and sampled negative ones~\cite{Bottou2010}.
 
 \begin{equation}\label{eq:margin_ranked_loss}
-    L = \sum_{}^{}(f_r(h^{'},t^{'}) - f_r(h,t) + \lambda )_+,
+    L = \sum_{}^{}\max(0, f_r(h^{'},t^{'}) - f_r(h,t) + \lambda)
 \end{equation}
 
 \subsubsection{Random Walk Models}
 
-Random walk models generate embeddings for nodes in knowledge graphs by applying the concepts from natural language models (e.g., \textit{SkipGram}, \textit{word2Vec}, and \textit{GloVE}) to random walks.
-The first, \textit{DeepWalk}~\cite{Perozzi2014}, used random walks to train a \textit{SkipGram}~\cite{Mikolov2013} model in which the random walks were considered as sentences and nodes were considered as words.
-Because \textit{SkipGram} is a language model that maximizes the co-occurrence probability of words in the same window, the resulting node vectors reflect the local structure of the input \ac{KG} (Figure~\ref{fig:deepwalk_embedding}).
+Random walk models generate embeddings for nodes in knowledge graphs by applying the concepts from natural language models (e.g.,~\textit{SkipGram}, \textit{word2Vec}, and \textit{GloVE}) to random walks.
+
+The first, \textit{DeepWalk}~\cite{Perozzi2014}, first generated a corpus of random walks from the knowledge graph starting from each node by uniformly randomly choosing an adjacent node at each step in the walk until the target length was achieved or no unvisited neighbors remained.
+These walks were used to train the \textit{SkipGram}~\cite{Mikolov2013} model in which the random walks were considered as sentences and nodes were considered as words.
+Because \textit{SkipGram} is a language model that maximizes the co-occurrence probability of words in the same window, the node vectors reflect the local structure of the input \ac{KG} (Figure~\ref{fig:deepwalk_embedding}).
 It is further rationalized by the observation that the distribution of nodes' appearances in random walks mirrors words in free text~\cite{Perozzi2014}.
+
 
 \begin{figure}
     \captionsetup{format=plain}
     \makebox[\textwidth]{\includegraphics[width=160mm]{figures/deepwalk_embedding.png}}
-    \caption{\textit{DeepWalk} produces embeddings that reflect the community structure of the underlying \ac{KG}. Figure adapted from ~\cite{Perozzi2014}}
+    \caption[DeepWalk Embeddings Reflect Community Structure]{\textit{DeepWalk} produces embeddings that reflect the community structure of the underlying \ac{KG}. Figure adapted from ~\cite{Perozzi2014}}
     \label{fig:deepwalk_embedding}
 \end{figure}
 
+\subsubsection{Applicability of Network Representation Learning}
+
 Biological knowledge encoded in many of the previously mentioned formats (e.g., \ac{BioPAX}, \ac{SBML}) can be directly translated into \acp{KG} to which network representation learning can be applied.
-The following subsection describes two of such applications in drug discovery.
+
+Because of the importance of community structure in biological networks~\cite{Girvan2002}, random walk models have the most appropriate formulation for capturing the underlying patterns in biological networks.
+A direct comparison for several types of biological networks including protein-protein interaction networks, miRNA-target networks, and other multimodal networks is currently under development following the contribution of related work from this thesis to~\cite{Ali2019}.
+
+The following subsection describes three of such applications in drug discovery.
