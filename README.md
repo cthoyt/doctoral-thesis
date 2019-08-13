@@ -1,6 +1,8 @@
 # Generation and Applications of Knowledge Graphs in Systems and Networks Biology
 
-This repository contains the doctoral thesis of Charles Tapley Hoyt.
+This repository contains the doctoral thesis of Charles Tapley Hoyt. Click [here](https://github.com/cthoyt/doctoral-thesis/raw/master/main.pdf) to get the PDF of the latest build from GitHub.
+
+## Build
 
 To build as a PDF, clone the repository and use the following command:
 
