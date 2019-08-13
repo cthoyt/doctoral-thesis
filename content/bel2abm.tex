@@ -4,7 +4,8 @@
 \section*{Preface}
 
 While previous chapters have improved the ability of \ac{BEL} to model multi-modal and multi-scale aspects of complex disease while integrating content from both unstructured text and structured sources, it has been limited by its inability to express the temporal dimension of the underlying biology.
-Even further, the time scales corresponding to molecular and clinically measurable process differ by several orders of magnitude.
+Even further, the time scales corresponding to molecular and clinically measurable processes and biomarkers differ by several orders of magnitude.
+Following the description of biomarkers' relations to disease-specific pathways encoded in NeuroMMSig~\cite{Domingo-Fernandez2017}, this publication describes an attempt at simulating their clinical trajectories.
 While others have focused on modeling timescales on the clinical level, the following publication presents a workflow (BEL2ABM) for converting knowledge graphs in \ac{BEL} into dynamic, executable, agent-based models.
 
 \vspace*{\fill}
@@ -17,5 +18,13 @@ Copyright © Gündel, M., \textit{et al.}, 2018.
 \section*{Postface}
 
 A proof of concept was presented that successfully reproduced the results of a past analysis based on an ordinary differential equation model describing the amyloid cascade from Schmidt \textit{et al.}~\cite{Schmidt2012} using a \ac{BEL} model of the amyloid cascade as an input to BEL2ABM\@.
+However, as this publication presented novel methodology for converting knowledge graphs into executable models, further examples of better understood and more data-rich biology (e.g., oncology) would be necessary to justify further investigation.
+Additionally, at the time of publication, the ecosystem for sustainable and reproducible research in agent-based modeling was very weak.
+Significant improvements to this ecosystem are also a necessary prerequisite for continued investigation.
+
+While differential equation modeling has historically suffered from issues in scalability, agent-based modeling approaches are much more ammenable to parallelization.
+However, agent-based modeling faces the same issues in optimizing hyperparameters as differential equation modeling~\cite{Stapor2018} and recent drastic improvements in differential equation solvers has lowered the burden of large differential equation systems, making it a more viable option.
+
 While BEL2ABM currently only supports a small subset of the events that can be expressed in \ac{BEL}, it represents a first step towards the ability to automatically generate dynamic models from static knowledge.
+Further steps will be taken during an upcoming master's thesis at the Fraunhofer SCAI Department of Bioinformatics.
 Combine with the ability to automatically generate and maintain knowledge graphs containing the highest quality content from structured sources as presented in Chapter~\ref{ch:bio2bel} and new relevant content from unstructured sources as presented in Chapter~\ref{ch:recuration}, this framework is one option to overcome previously described challenges faced by both more simple and more powerful modeling techniques.

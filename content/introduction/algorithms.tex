@@ -35,7 +35,7 @@ Two complementary statistics for the effect of permutations of the upstream laye
 \begin{figure}
 \captionsetup{format=plain}
 \makebox[\textwidth]{\includegraphics[width=160mm]{figures/npa_schematic.png}}
-\caption[Hypothesis Network Generation for Network Perturbation Amplitude]{Creation of hypothesis networks that accounts for the topology and interactions of  upstream controller layer with respect to a reference node A), their individual effects on the downstream layer B) and their combine effect C). Adapted from~\cite{Martin2012}.}
+\caption[Hypothesis Network Generation for \ac{NPA}]{Creation of hypothesis networks that accounts for the topology and interactions of  upstream controller layer with respect to a reference node A), their individual effects on the downstream layer B) and their combine effect C). Adapted from~\cite{Martin2012}.}
 \label{fig:npa_schematic}
 \end{figure}
 
@@ -63,9 +63,9 @@ Several methods inspired by linear algebra, deep learning, and natural language 
     \centering
     \begin{tabular}{ l l l }
         \hline
-        Type & Model & Reference \\
+        Model Type & Name & Reference \\
         \hline
-        \multirow{6}{*}{Translational Distance Models}
+        \multirow{6}{*}{Translational Distance}
         & Structured Embedding & ~\cite{Bordes2011}  \\
         & TransE & ~\cite{Bordes2013} \\
         & Unstructured Model & ~\cite{Bordes2014} \\
@@ -73,17 +73,18 @@ Several methods inspired by linear algebra, deep learning, and natural language 
         & TransR & ~\cite{Lin2015} \\
         & TransD & ~\cite{Ji2015} \\
         \hline
-        \multirow{4}{*}{Semantic Matching Models}
+        \multirow{4}{*}{Semantic Matching}
         & RESCAL & ~\cite{Nickel2011} \\
         & ERMLP & ~\cite{Dong2014} \\
         & DistMult & ~\cite{Yang2014}  \\
         & ConvE & ~\cite{Dettmers2017} \\
         \hline
-        \multirow{4}{*}{Random-Walk Models}
+        \multirow{4}{*}{Random Walk}
         & DeepWalk & ~\cite{Perozzi2014} \\
         & Gat2Vec & ~\cite{Sheikh2018} \\
         & node2vec & ~\cite{Grover2016} \\
         & edge2vec & ~\cite{Gao2018} \\
+        & metapath2vec & ~\cite{Dong2017} \\
         & LINE & ~\cite{Tang2015} \\
         \hline
     \end{tabular}
@@ -153,16 +154,26 @@ The margin ranking loss can be optimized with stochastic gradient descent while 
 
 Random walk models generate embeddings for nodes in knowledge graphs by applying the concepts from natural language models (e.g.,~\textit{SkipGram}, \textit{word2Vec}, and \textit{GloVE}) to random walks.
 
-The first, \textit{DeepWalk}~\cite{Perozzi2014}, first generated a corpus of random walks from the knowledge graph starting from each node by uniformly randomly choosing an adjacent node at each step in the walk until the target length was achieved or no unvisited neighbors remained.
+The first, \textit{DeepWalk}~\cite{Perozzi2014}, generates a corpus of random walks from the knowledge graph starting from each node by uniformly randomly choosing an adjacent node at each step in the walk until the target length was achieved or no unvisited neighbors remained.
 These walks were used to train the \textit{SkipGram}~\cite{Mikolov2013} model in which the random walks were considered as sentences and nodes were considered as words.
 Because \textit{SkipGram} is a language model that maximizes the co-occurrence probability of words in the same window, the node vectors reflect the local structure of the input \ac{KG} (Figure~\ref{fig:deepwalk_embedding}).
 It is further rationalized by the observation that the distribution of nodes' appearances in random walks mirrors words in free text~\cite{Perozzi2014}.
+Several aspects of knowledge graphs were not addressed by DeepWalk, including the community structure of the second neighbors of each nodes, the types of nodes, the types of edges, and attributes of nodes and edges.
 
+Node2vec~\cite{Grover2016} addresses the community structure of the second neighbors of each node by modifying the random walk process to include second-order random walks, where the probability of walking to each neighbor from a given node is also influenced by its previous steps.
+Node2vec has been independently implemented several times, but most suffer from difficulty in implementing second order walking both in terms of algorithmic understandability and from a computational perspective.
+Recently, the implementation at \url{https://github.com/VHRanger/graph2vec} has solved many of those issues with both an elegant and efficient implementation.
+Edge2vec~\cite{Gao2018} took a similar approach to node2vec by calculating probabilities of traversing each edge type based on the previous steps in a walk.
+It was able to better capture the underlying distributions in knowledge graphs with multiple edge types.
+Metapath2vec~\cite{Dong2017} created random walks that included the node types and edge types in order to address their absence, and Gat2vec~\cite{Sheikh2018} added attributes as actual nodes to knowledge graphs such that they could be incorporated (and then filtered) from random walks.
+
+Random walk methods are very powerful in that most rely on changing the random walk generation, and the workflow can be maintained.
+While it has not yet been done, this leaves significant improvement for abstraction of this methodology and development of powerful and flexible computational frameworks for future research.
 
 \begin{figure}
     \captionsetup{format=plain}
     \makebox[\textwidth]{\includegraphics[width=160mm]{figures/deepwalk_embedding.png}}
-    \caption[DeepWalk Embeddings Reflect Community Structure]{\textit{DeepWalk} produces embeddings that reflect the community structure of the underlying \ac{KG}. Figure adapted from ~\cite{Perozzi2014}}
+    \caption[DeepWalk Embeddings Reflect Community Structure]{\textit{DeepWalk} produces embeddings that reflect the community structure of the underlying \ac{KG}. Figure adapted from~\cite{Perozzi2014}}
     \label{fig:deepwalk_embedding}
 \end{figure}
 
