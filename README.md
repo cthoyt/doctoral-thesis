@@ -36,3 +36,7 @@ Ultimately, the this thesis lays the groundwork for production-level application
 5. Gündel, M., Hoyt, C. T., & Hofmann-Apitius, M. (2018). BEL2ABM: Agent- based simulation of static models in Biological Expression Language. *Bioinformatics*, 34(13), 2316–2318.
 6. Muslu, Ö., Hoyt, C. T., Hofmann-Apitius, M., & Fröhlich, H. (2019). Guilty- Targets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning. *IEEE/ACM Trans. Comput. Biol. Bioinform., submitted*.
 7. Hoyt, C. T., *et al.* (2018). A systematic approach for identifying shared mech- anisms in epilepsy and its comorbidities. *Database*, 2018(1).
+
+## Commits
+
+<img src="commits/commits.png" alt="commits" />
