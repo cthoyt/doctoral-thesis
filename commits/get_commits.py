@@ -31,11 +31,11 @@ def iterate_commits(directory: str, authors: Optional[Collection[str]]) -> Itera
 
 
 HEADER = [
-    'Category',
-    'Repository',
-    'SHA',
-    'When',
-    'Name',
+    'category',
+    'repository',
+    'sha',
+    'datetime',
+    'author',
 ]
 
 

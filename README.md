@@ -39,4 +39,4 @@ Ultimately, the this thesis lays the groundwork for production-level application
 
 ## Commits
 
-<img src="commits/commits.png" alt="commits" />
+<img src="commits/commits.gif" alt="commits" />
