@@ -20,7 +20,7 @@ In Chapter~\ref{ch:bel2abm}, the first of the three applications of highly enric
 In it, BEL2ABM was shown to be able to convert static biological knowledge graphs into dynamic, executable agent-based models that could recapitulate ordinary differential equation models of biological systems after undergoing parameter optimization.
 In Chapter~\ref{ch:guiltytargets}, GuiltyTargets was introduced as an alternative to topological feature engineering that, when applied in the target prioritization task, outperformed the previous state of the art.
 These results implied that network representation learning on biological knowlege graphs has huge potential in not only target prioritization, but potentially any tasks that rely on feature engineering from knowledge graphs.
-In the Chapter~\ref{ch:epicom}, the final application was presented about using biological knowledge graphs annotated with disease specificity to not only deconvolute the mechanism of action of the drug, carbamazepine, but to hypothesize an explanation for its epidemiologically observed multi-indication effects in \ac{AD} and epilepsy.
+In Chapter~\ref{ch:epicom}, the final application was presented about using biological knowledge graphs annotated with disease specificity to not only deconvolute the mechanism of action of the drug, carbamazepine, but to hypothesize an explanation for its epidemiologically observed multi-indication effects in \ac{AD} and epilepsy.
 
 \section{Future Work}
 
@@ -32,18 +32,19 @@ More specifically, the PyBEL and BEL Commons codebase will be incorporated into 
 It will also include features from Bio2BEL to more dynamically link to other resources, as well as directly querying compounds as a fourth modality in addition to genes, mutations, and clinical features.
 
 The most interesting future work lies with the generation of new analytical techniques using network representation learning to solve similar and new problems relevant to drug discovery.
-Following the completion of \"{O}zlem Muslu's Master's Thesis, which was the basis for \textit{GuiltyTargets}, four new master's theses concerning 1) the incorporation of phenome-wide association studies, 2) the application of network representation learning to the drug repositioning workflow presented by Himmelstein \textit{et al.}~\cite{Himmelstein2017}, 3) the benchmarking of network representation learning in multi-modal graphs for deconvolution of mechanism of actions causing side effects, and 4) alternate ways to include disease-specific signatures in underlying networks before representation learning and application of target prioritization.
+Following the completion of \"{O}zlem Muslu's master's thesis, which was the basis for \textit{GuiltyTargets}, four new master's theses have been started concerning 1) the incorporation of phenome-wide association studies, 2) the application of network representation learning to the drug repositioning workflow presented by Himmelstein \textit{et al.}~\cite{Himmelstein2017}, 3) the benchmarking of network representation learning in multi-modal graphs for deconvolution of mechanism of actions causing side effects, and 4) alternate ways to include disease-specific signatures in underlying networks before representation learning and application of target prioritization.
 While the publication from Chapter~\ref{ch:epicom} focused on a single drug in the context of two diseases, the methods can be more generally applied across all drugs listed in DrugBank~\cite{Wishart2018} and all diseases covered by NeuroMMSig to identify further repositioning candidates.
 Further, this could lead to an interesting exploration of chemical space and the scaffolds that occur in multi-indication drugs.
 
-In order to support the inclusion of new neurodegenerative diseases in NeuroMMSig like Huntington's disease and Multiple Sclerosis, several additions can be made to the rational enrichment pipeline presented in Chapter~\ref{ch:recuration}.
+In order to support the inclusion of new neurodegenerative diseases in NeuroMMSig like Huntington's disease and multiple sclerosis, several additions can be made to the rational enrichment pipeline presented in Chapter~\ref{ch:recuration}.
 First, it can be presented as a web interface and more tightly integrated with the visualization tools included in BEL Commons.
 Second, network representation learning can also be used to automatically assign \ac{BEL} statements to sub-graphs in NeuroMMSig using a combination of the inter-database pathway mappings included in ComPath~\cite{Domingo-Fernandez2018} and the BioKEEN~\cite{Ali2019} software.
 
 \section{Impact, Reflections, and Acknowledgements}
 
 As the preface and postface to most of the chapters containing the articles included in this thesis stated, the work presented here has not been done in a vacuum.
-I have built each component of this thesis built upon the last, until the PyBEL ecosystem that was originally developed in 2016 became a platform for doing systems and networks biology that vastly transcended its original goal of being a new and stable compiler for \ac{BEL}.
+I have built each component of the PyBEL ecosystem on the previous to support each story in thesis.
+In the end, the code that was originally developed in 2016 became an entire platform for systems and networks biology that vastly transcended its original goal of being a new and stable compiler for \ac{BEL}.
 
 While I have mostly used the passive voice throughout this thesis to describe the work that has been done, it would be blasphemous to finish without crediting all of the wonderful scientists with whom I've written each of the included publications.
 The work I have done during the course of my doctorate has not been done in isolation; it has been used and improved by several members my group at the Fraunhofer SCAI Department of Bioinformatics throughout their own master's and doctoral theses.
@@ -51,5 +52,5 @@ Each of them has left their own footprints throughout.
 Conversely, I've also had the pleasure to incorporate the work of others into mine; unabashedly, and without worry of jealousy or conflict.
 
 The work presented here has also provided support to the partners in our projects and to the wider community.
-As I reflect on the work I have done in my doctorate, I believe that the openness with which I have done my work has lead to some of my most interesting work and some of the most interesting collaborations; many of which I have not included here (but if you're interested, that work won't be hard to find, either).
+As I reflect on what I have done in my doctorate, I believe that the openness with which I have done my work has lead to some of my most interesting work and some of the most interesting collaborations; many of which I have not included here (but if you're interested, that work won't be hard to find, either).
 I find it exciting to consider that as this thesis comes to a close, that my work may continue, even without me.

@@ -97,7 +97,7 @@ Each translational distance model learns entity and relation embeddings in eucli
 
 An example of an established translational distance model is TransE~\cite{Bordes2013}.
 It models a class of relation \textit{r} as the translation from a head entity $h$ (i.e., the subject of a triple) to a tail entity $t$ (i.e., the object of a triple) in a representative euclidean space as $h + r \approx t$.
-It measures the plausibility of a given the following scoring function:
+It measures the plausibility of a given triple with the following scoring function:
 
 \begin{equation}\label{eq:trans_e_scoring_function}
     f_r(h,t) = - \|h + r - t\|
@@ -107,7 +107,7 @@ The closer the embedding of the tail is to the sum of the head and relation embe
 However, because TransE is limited in modeling $1-N$, $N-1$, and to $N-M$ relations, several extensions have been proposed (e.g., TransH, TransR, and TransD).
 
 TransH extends TransE by representing each relation in a relation-specific hyperplane with normal vector $w_r$~\cite{Wang2014}.
-Before scoring, the head and tail entities are projected using the following equations before using a the same scoring function as in TransE.
+Before scoring, the head and tail entities are projected using the following equations before using the same scoring function as in TransE\@.
 
 \begin{equation} \label{eq:trans_h_proj_head}
 h_{\perp} = h -w_{r}^\top hw_r
