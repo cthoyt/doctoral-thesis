@@ -31,7 +31,10 @@ This project showcased the Bio2BEL philosophy of reproducibility and reusability
 Third, Bio2BEL packages have been used in the application of \ac{NRL} methods using BioKEEN~\cite{Ali2019}.
 Because this project saw the generation of a converter for any \ac{BEL} into a format that can be embedded using \ac{NRL}, any new Bio2BEL package can be readily used.
 
-Finally, the Bio2BEL project lead to the integration with several other data aggregation systems like \ac{INDRA}~\cite{Gyori2017} and OmniPath~\cite{Turei2016}.
+Finally, the Bio2BEL project lead to the integration with several other data aggregation systems.
+Integration with \ac{INDRA}~\cite{Gyori2017} was done through the development of the PyBEL processor~\footnote{\url{https://indra.readthedocs.io/en/latest/modules/sources/bel/index.html\#module-indra.sources.bel.processor}} and subsequent inclusion within the Bio2BEL framework\footnote{\url{https://github.com/bio2bel/bio2bel/commit/e52eefad11f38f6654b2c27724ea9f3600f58405}}.
+Integration with OmniPath~\cite{Turei2016} was done during the course of the work that comprised the previous publication in the v0.8 release of \textit{PyPath}\footnote{\url{https://github.com/saezlab/pypath}}.
+Further systems will be integrated in the future, such as the sources composing Pathway Commons~\cite{Cerami2011}.
 
 Given the PyBEL ecosystem first introduced in Chapter~\ref{ch:pybel}, the environment for exploration presented in Chapter~\ref{ch:belcommons}, the enrichment workflow presented in Chapter~\ref{ch:recuration}, and Bio2BEL, it is possible to generate and handle high quality biological knowledge graphs to support downstream analysis.
 The remaining Chapters~\ref{ch:bel2abm},~\ref{ch:guiltytargets}, and~\ref{ch:epicom} constitue three examples of these downstream analyses.
