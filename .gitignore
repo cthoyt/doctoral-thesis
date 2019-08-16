@@ -1,16 +1,19 @@
 .DS_Store
 .idea
-*.aux
-main.log
-main.out
-main.bcf
-main.run.xml
-main.toc
-main.bbl
-main.fdb_latexmk
-main.blg
-main.fls
-main.dvi
-main.lof
-main.lot
+
 commits/.ipynb_checkpoints/A PhD in Commits-checkpoint.ipynb
+
+# LaTeX
+*.aux
+*.toc
+*.blg
+*.dvi
+*.lof
+*.lot
+*.bbl
+*.bcf
+*.fdb_latexmk
+*.log
+*.out
+*.fls
+*.xml

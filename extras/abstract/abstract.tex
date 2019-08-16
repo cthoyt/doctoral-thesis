@@ -1,0 +1,38 @@
+% Charles Tapley Hoyt PhD Thesis
+% University of Bonn PhD in Computational Life Sciences
+
+\documentclass[a4paper, openright, 12pt, twoside]{report}
+
+\input{../../others/preamble}
+
+\begin{document}
+
+    \begin{titlepage}                                        %with this page count is reset when we end environment
+        \pagenumbering{gobble}                                    %hide page numbers
+
+
+        \begin{center}
+
+
+            \fontsize{28}{36}\selectfont                            %changes font size
+
+            Generation and Applications of Knowledge Graphs in Systems and Networks Biology
+
+            \vspace{1cm}                                            %adds vertical space
+            \renewcommand{\baselinestretch}{1.5}                    %sets line separation
+            \large
+
+            \textsc{Charles Tapley Hoyt} \\
+
+        \end{center}
+
+        {\let\clearpage\relax \chapter*{Abstract}}
+
+
+        \normalsize \normalfont \renewcommand{\baselinestretch}{1.5} \setlength{\parskip}{1em}
+
+        \input{../../others/abstract_text}
+
+    \end{titlepage}
+
+\end{document}
