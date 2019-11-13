@@ -29,13 +29,13 @@ Ultimately, the this thesis lays the groundwork for production-level application
 
 ## Publications
 
-1. Hoyt, C. T., Konotopez, A., & Ebeling, C. (2017). PyBEL: a computational framework for Biological Expression Language. *Bioinformatics (Oxford, England)*, 34(4), 703–704.
-2. Hoyt, C. T., Domingo-Fernández, D., & Hofmann-Apitius, M. (2018). BEL Commons: an environment for exploration and analysis of networks encoded in Biological Expression Language. *Database*, 2018(3), 1–11.
-3. Hoyt, C. T., *et al.* (2019). Re-curation and rational enrichment of knowledge graphs in Biological Expression Language. *Database*, 2019, baz068.
-4. Hoyt, C. T., *et al.* (2019). Bio2BEL: Integration of Structured Knowledge Sources with Biological Expression Language. *BMC Bioinformatics, submitted*.
-5. Gündel, M., Hoyt, C. T., & Hofmann-Apitius, M. (2018). BEL2ABM: Agent- based simulation of static models in Biological Expression Language. *Bioinformatics*, 34(13), 2316–2318.
-6. Muslu, Ö., Hoyt, C. T., Hofmann-Apitius, M., & Fröhlich, H. (2019). Guilty- Targets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning. *IEEE/ACM Trans. Comput. Biol. Bioinform., submitted*.
-7. Hoyt, C. T., *et al.* (2018). A systematic approach for identifying shared mech- anisms in epilepsy and its comorbidities. *Database*, 2018(1).
+1. Hoyt, C. T., Konotopez, A., & Ebeling, C. (2017). [PyBEL: a computational framework for Biological Expression Language](https://doi.org/10.1093/bioinformatics/btx660). *Bioinformatics (Oxford, England)*, 34(4), 703–704.
+2. Hoyt, C. T., Domingo-Fernández, D., & Hofmann-Apitius, M. (2018). [BEL Commons: an environment for exploration and analysis of networks encoded in Biological Expression Language](https://doi.org/10.1093/database/bay126). *Database*, 2018(3), 1–11.
+3. Hoyt, C. T., *et al.* (2019). [Re-curation and rational enrichment of knowledge graphs in Biological Expression Language](https://doi.org/10.1093/database/baz068). *Database*, 2019, baz068.
+4. Hoyt, C. T., *et al.* (2019). [Bio2BEL: Integration of Structured Knowledge Sources with Biological Expression Language]https://doi.org/10.1101/631812). *submitted*.
+5. Gündel, M., Hoyt, C. T., & Hofmann-Apitius, M. (2018). [BEL2ABM: Agent- based simulation of static models in Biological Expression Language](https://doi.org/10.1093/bioinformatics/bty107). *Bioinformatics*, 34(13), 2316–2318.
+6. Muslu, Ö., Hoyt, C. T., Hofmann-Apitius, M., & Fröhlich, H. (2019). [GuiltyTargets: Prioritization of Novel Therapeutic Targets with Deep Network Representation Learning](https://doi.org/10.1101/521161). *IEEE/ACM Trans. Comput. Biol. Bioinform., submitted*.
+7. Hoyt, C. T., *et al.* (2018). [A systematic approach for identifying shared mechanisms in epilepsy and its comorbidities](https://doi.org/10.1093/database/bay050). *Database*, 2018(1).
 
 ## Commits
 
