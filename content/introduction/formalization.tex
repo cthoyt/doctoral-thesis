@@ -1,7 +1,5 @@
 \section{Formalization of Knowledge}
 
-\subsection{Abstraction of Methodological, Conceptual, and Factual Knowledge}
-
 The most abstract level of knowledge, methodological knowledge, describes the formalisms through which knowledge can be represented.
 The two most common schemata for methodological knowledge are \ac{RDFS} and \ac{OWL}.
 They provide the faculty to describe the middle level, conceptual knowledge, which encodes the classes, relations, and constraints relevant to a given domain.
@@ -118,15 +116,17 @@ This variant is most related to \ac{BEL} and \acp{GOCAM}, while the others are m
 \subsection{Standardized Curation of Biological Knowledge}
 \label{subsec:standardized_curation}
 
-There exists thousands of biological data databases describing different biological phenomena with varying semantics and levels of granularity (Table~\ref{tab:biological_relations}).
+There exist thousands of biological data databases describing different biological phenomena with varying semantics and levels of granularity (Table~\ref{tab:biological_relations}).
 While many have begun to use standardized ontologies and knowledge formats, many remain.
 Further, the use of standard formats does not guarantee interoperability~\cite{Domingo-Fernandez2019a}.
 Integrative approaches have begun to alleviate this burden for domain-specific use cases (e.g., gene set enrichment analysis on pathway and gene set databases).
 In Chapter~\ref{ch:bio2bel}, a general approach for creating integrative databases using BEL is described.
 
 \begin{table}
+    \caption{Examples of qualities of biological relationships and their attributes}
+    \label{tab:biological_relations}
     \centering
-    \begin{tabular}{ r l }
+    \begin{tabular}{ l l }
         Quality & Choices \\
         \hline
         Types of Relation & Causal, Correlative, Associative, Ontological \\
@@ -136,13 +136,10 @@ In Chapter~\ref{ch:bio2bel}, a general approach for creating integrative databas
         Modes of Entity & Activity, Abundance, Efflux  \\
         Modifications of Entity & Post-translational modifications, gene/protein fusions, mutations \\
         States of Entity & Subcellular Location, pre-/post-conditions \\
-
     \end{tabular}
-    \caption{Examples of qualities of biological relationships and their attributes}
-    \label{tab:biological_relations}
 \end{table}
 
-Further, the quantity of knowledge in the biomedical domain is increasing at an unprecedented rate — with no signs of deceleration.
+Further, the quantity of knowledge in the biomedical domain is increasing at an unprecedented rate, with no signs of deceleration.
 Even with the assistance of information retrieval technologies, it is overwhelming, if not impossible, for individuals or groups of researchers to be knowledgeable of the state-of-the-art in any but an incredibly specific topic.
 Therefore, researchers need the assistance of automated relation extraction systems to assist in the enrichment of previously existing knowledge available and integrated from relevant, high-quality databases.
 
@@ -152,6 +149,8 @@ Additionally, it contains a sampling of BEL-specific relation extraction systems
 
 
 \begin{table}
+    \caption{Examples of relation extraction and reading systems with varying degrees of domain specificity}
+    \label{tab:relation_extraction_systems}
     \centering
     \begin{tabular}{ l l l }
         Type & Name & Reference \\
@@ -178,8 +177,6 @@ Additionally, it contains a sampling of BEL-specific relation extraction systems
         & BELTracker &\cite{Rastegar-Mojarad2016} \\
         & BELMiner &\cite{Ravikumar2017} \\
     \end{tabular}
-    \caption{Examples of relation extraction and reading systems with varying degrees of domain specificity}
-    \label{tab:relation_extraction_systems}
 \end{table}
 
 \subsubsection{Issues with Automated Relation Extraction Systems}
