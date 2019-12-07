@@ -1,6 +1,6 @@
 # Generation and Applications of Knowledge Graphs in Systems and Networks Biology [![DOI](https://zenodo.org/badge/185400874.svg)](https://zenodo.org/badge/latestdoi/185400874)
 
-This repository contains the doctoral thesis of Charles Tapley Hoyt. Click [here](https://github.com/cthoyt/doctoral-thesis/raw/master/main.pdf) to get the PDF of the latest build from GitHub.
+This repository contains the doctoral thesis of Dr. Charles Tapley Hoyt that was defended on December 3rd, 2019. Click [here](https://github.com/cthoyt/doctoral-thesis/raw/master/main.pdf) to get the PDF of the latest build from GitHub.
 
 ## Build
 
